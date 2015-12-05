@@ -13,4 +13,12 @@ class ProjectsController < ApplicationController
 		p.save
 		redirect_to '/projects'
 	end
+
+	def show
+		@project=Project.find(params[:id])
+		rescue ActiveRecord::RecordNotFound
+		render 'no_hay_nada'
+	end
+
+
 end
