@@ -2,8 +2,9 @@
 <h3>Projects</h3>
 <ul>
 	<% @projects.each do |project| %>
-	<li><%=project.name%>
+	<li><%=project.id%> - <%=project.name%>
 		<%=project.description.present? ? "- #{project.description}" : " " %>
+		<%= link_to("Delete", "/projects/#{project.id}", method: :delete) %>
 	</li>
 	<% end %>
 </ul>
