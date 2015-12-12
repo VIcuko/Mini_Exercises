@@ -20,12 +20,28 @@ class EntriesController < ApplicationController
 		else
 			render "new"
 		end
-		
-		
 	end
+
+	def edit
+		@project = Project.find(params[:project_id])
+		@entry = @project.entries.find(params[:id])
+	end
+
+	def update
+		@project = Project.find(params[:project_id])
+		@entry = @project.entries.find(params[:id])
+		@entry.update_attributes(entry_params)
+		if @entry.update_attributes(entry_params)
+			flash[:notice] = "Entry updated!"
+			redirect_to project_entries_path(@project)
+		else
+			@errors = @entry.errors.full_messages
+			render :edit
+		end
+	end		
 	
 	private
 	def entry_params
-		params.require(:entry).permit(:hours, :minutes, :date)
+		params.require(:entry).permit(:hours, :minutes, :date, :comments)
 	end
 end

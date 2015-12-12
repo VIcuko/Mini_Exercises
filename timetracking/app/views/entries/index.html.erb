@@ -1,11 +1,21 @@
 <h1>Project: <%= @project.name %></h1>
 <h2>Total hours worked: <%= @total_hours %> </h2>
 <h2>Total hours worked this month: <%= @total_hours_this_month %> </h2>
+<% if flash[:notice] %>
+	<h2> <%= flash[:notice] %> </h2>
+<% end %>
+
 <h3>Entries</h3>
+
 <ul>
 	<% @entries_this_month.each do |entry| %>
 	<li><%= entry.id %> - <%= entry.hours %>:<%= entry.minutes %>
 		<%= entry.comments.present? ? "- #{entry.comments}" : " " %>
+		<%= link_to "Edit", edit_project_entry_path(@project,entry) %>
 	</li>
 	<% end %>
+
+	<%= link_to "Create new entry", new_project_entry_path %>
+	<br>
+	<%= link_to "Back to projects", projects_path %>
 </ul>

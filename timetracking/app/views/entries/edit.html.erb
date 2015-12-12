@@ -1,0 +1,13 @@
+<h1>Edit entry for project: <%= @project.name %></h1>
+
+<% if @errors.present? %>
+	<ul>
+		<% @errors.each do |error| %>
+			<li><%= error %></li>
+		<% end %>
+	</ul>
+<% end %>
+
+<%= render "form" %>
+
+<%= link_to "Cancel", project_entries_path %>
