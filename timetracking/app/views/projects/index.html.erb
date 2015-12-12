@@ -1,9 +1,9 @@
-<h1>Welcom to Timetracking tool</h1>
+<h1>Welcome to Timetracking tool</h1>
 <h3>Projects</h3>
 <ul>
 	<% @projects.each do |project| %>
-	<li><%=project.id%> - <%=project.name%>
-		<%=project.description.present? ? "- #{project.description}" : " " %>
+	<li><%= project.id %> - <%= project.name %>
+		<%= project.description.present? ? "- #{project.description}" : " " %>
 		<%= link_to("Delete", "/projects/#{project.id}", method: :delete) %>
 	</li>
 	<% end %>
