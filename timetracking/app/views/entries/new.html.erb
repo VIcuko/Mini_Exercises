@@ -1,5 +1,15 @@
 <h1>New entry for project: <%= @project.name %></h1>
 
+<% if @entry.errors.any? %>
+	<ul>
+		<% @entry.errors.full_messages.each do |error_message| %>
+		<li><%= error_message %></li>
+		<% end %>
+	</ul>
+<% end %>
+		
+
+
 <%= form_for [@project, @entry] do |f| %>
 	<%=f.label :hours , "Hours:" %>
 	<%= f.number_field :hours %>
@@ -7,7 +17,9 @@
 	<%= f.number_field :minutes %>
 	<%= f.label :comments , "Coments:" %>
 	<%= f.text_field :comments %>
+	
 	<%= f.label :date , "Date:" %>
 	<%= f.date_field :date %>
+	
 	<%= f.submit "Save" %>
 <% end %>
