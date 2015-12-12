@@ -21,17 +21,20 @@ class Project < ActiveRecord::Base
 	end
 
 	def how_many_hours
-		self.entries.reduce(0) do |sum,x|
+		time=entries.reduce(0) do |sum,x|
 			sum+x.hours.to_f+((x.minutes.to_f)/60).round(2)
 		end
+		binding.pry
+		time.round(2)
 	end
 	def how_many_hours_this_month(month,year)
-		self.entries.reduce(0) do |sum,entry|
+		time=entries.reduce(0) do |sum,entry|
 			sum+entry.hours.to_f+((entry.minutes.to_f)/60).round(2) if entry.created_at.month==month && entry.created_at.year==year
 		end
+		time.round(2)
 	end
 	def entries_this_month(month,year)
-		self.entries.where(created_at: Date.new(year,month,1)..Date.new(year,month,-1))
+		entries.where(created_at: Date.new(year,month,1)..Date.new(year,month,-1))
 		# self.entries.each do |entry|
 		# 	entry.
 		# end

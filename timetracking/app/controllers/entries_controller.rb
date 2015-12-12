@@ -39,9 +39,19 @@ class EntriesController < ApplicationController
 			render :edit
 		end
 	end		
+
+	def destroy
+		project=Project.find(params[:project_id])
+		entry=project.entries.find(params[:id])
+		entry.destroy
+
+		redirect_to project_entries_path(project.id)
+	end
 	
 	private
+	
 	def entry_params
 		params.require(:entry).permit(:hours, :minutes, :date, :comments)
 	end
+
 end
