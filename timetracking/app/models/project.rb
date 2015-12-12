@@ -24,7 +24,6 @@ class Project < ActiveRecord::Base
 		time=entries.reduce(0) do |sum,x|
 			sum+x.hours.to_f+((x.minutes.to_f)/60).round(2)
 		end
-		binding.pry
 		time.round(2)
 	end
 	def how_many_hours_this_month(month,year)

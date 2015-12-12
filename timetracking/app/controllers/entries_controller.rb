@@ -16,8 +16,10 @@ class EntriesController < ApplicationController
 		@project = Project.find(params[:project_id])
 		@entry = @project.entries.new(entry_params)
 		if @entry.save
-			redirect_to "/projects/#{@project.id}/entries"
+			flash[:notice] = "Entry created successfully"
+			redirect_to project_entries_path(@project)
 		else
+			flash[:alert] = "Uh oh! Something went wrong"
 			render "new"
 		end
 	end
