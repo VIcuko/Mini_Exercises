@@ -19,7 +19,7 @@ class EntriesController < ApplicationController
 			flash[:notice] = "Entry created successfully"
 			redirect_to project_entries_path(@project)
 		else
-			flash[:alert] = "Uh oh! Something went wrong"
+			flash.now[:alert] = "Uh oh! Something went wrong"
 			render "new"
 		end
 	end

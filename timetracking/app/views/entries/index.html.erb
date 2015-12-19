@@ -1,9 +1,7 @@
 <h1>Project: <%= @project.name %></h1>
 <h2>Total hours worked: <%= @total_hours %> </h2>
 <h2>Total hours worked this month: <%= @total_hours_this_month %> </h2>
-<% if flash[:notice] %>
-	<h2> <%= flash[:notice] %> </h2>
-<% end %>
+<%=flash_message %>
 
 <h3>Entries</h3>
 
