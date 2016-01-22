@@ -94,6 +94,12 @@
     (function() {
       $('#submit').on('click', function(event) {
         event.preventDefault()
+        var name=$([name=name]).val;
+        var job=$([name=job-title]).val;
+        var phone=$([name=phone]).val;
+        var mail=$([name=email]).val;
+        $(name,job,phone,mail).after('p #job-title');
+
         // your code for creating the business card goes here
         // get the values from the form fields
         // add them to the business card
