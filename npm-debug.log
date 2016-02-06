@@ -1,0 +1,2562 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'jshint' ]
+2 info using npm@3.3.12
+3 info using node@v5.3.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData jshint
+8 silly fetchNamedPackageData jshint
+9 silly mapToRegistry name jshint
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/jshint
+13 verbose request uri https://registry.npmjs.org/jshint
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 7:07:24 PM
+16 verbose request id 849d7db2130086b8
+17 verbose etag "2NM10A09JKZD8D6671KPKN96W"
+18 http request GET https://registry.npmjs.org/jshint
+19 http 200 https://registry.npmjs.org/jshint
+20 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 verbose headers   etag: '"CNWJ9GCWB5RGR6P6NFTQGH6WG"',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'content-length': '112509',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Fri, 29 Jan 2016 18:07:26 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   age: '119',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-ams4135-AMS',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1454090846.202068,VS0,VE0',
+20 verbose headers   vary: 'Accept' }
+21 silly get cb [ 200,
+21 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+21 silly get     etag: '"CNWJ9GCWB5RGR6P6NFTQGH6WG"',
+21 silly get     'content-type': 'application/json',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'content-length': '112509',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Fri, 29 Jan 2016 18:07:26 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     age: '119',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-ams4135-AMS',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1454090846.202068,VS0,VE0',
+21 silly get     vary: 'Accept' } ]
+22 verbose get saving jshint to /Users/iTurbo/.npm/registry.npmjs.org/jshint/.cache.json
+23 silly install normalizeTree
+24 silly loadCurrentTree Finishing
+25 silly loadIdealTree Starting
+26 silly install loadIdealTree
+27 silly cloneCurrentTree Starting
+28 silly install cloneCurrentTreeToIdealTree
+29 silly cloneCurrentTree Finishing
+30 silly loadShrinkwrap Starting
+31 silly install loadShrinkwrap
+32 silly loadShrinkwrap Finishing
+33 silly loadAllDepsIntoIdealTree Starting
+34 silly install loadAllDepsIntoIdealTree
+35 silly resolveWithNewModule jshint@2.9.1 checking installable status
+36 silly cache add args [ 'jshint', null ]
+37 verbose cache add spec jshint
+38 silly cache add parsed spec Result {
+38 silly cache add   raw: 'jshint',
+38 silly cache add   scope: null,
+38 silly cache add   name: 'jshint',
+38 silly cache add   rawSpec: '',
+38 silly cache add   spec: '*',
+38 silly cache add   type: 'range' }
+39 silly addNamed jshint@*
+40 verbose addNamed "*" is a valid semver range for jshint
+41 silly addNameRange { name: 'jshint', range: '*', hasData: false }
+42 silly mapToRegistry name jshint
+43 silly mapToRegistry using default registry
+44 silly mapToRegistry registry https://registry.npmjs.org/
+45 silly mapToRegistry uri https://registry.npmjs.org/jshint
+46 verbose addNameRange registry:https://registry.npmjs.org/jshint not in flight; fetching
+47 verbose get https://registry.npmjs.org/jshint not expired, no request
+48 silly addNameRange number 2 { name: 'jshint', range: '*', hasData: true }
+49 silly addNameRange versions [ 'jshint',
+49 silly addNameRange   [ '0.1.8',
+49 silly addNameRange     '0.1.9',
+49 silly addNameRange     '0.2.0',
+49 silly addNameRange     '0.2.1',
+49 silly addNameRange     '0.2.2',
+49 silly addNameRange     '0.2.3',
+49 silly addNameRange     '0.3.0',
+49 silly addNameRange     '0.3.1',
+49 silly addNameRange     '0.4.0',
+49 silly addNameRange     '0.5.0',
+49 silly addNameRange     '0.5.1',
+49 silly addNameRange     '0.5.2',
+49 silly addNameRange     '0.5.3',
+49 silly addNameRange     '0.5.4',
+49 silly addNameRange     '0.5.5',
+49 silly addNameRange     '0.5.6',
+49 silly addNameRange     '0.5.7',
+49 silly addNameRange     '0.5.8',
+49 silly addNameRange     '0.5.9',
+49 silly addNameRange     '0.6.0',
+49 silly addNameRange     '0.6.1',
+49 silly addNameRange     '0.6.2',
+49 silly addNameRange     '0.6.3',
+49 silly addNameRange     '0.7.0',
+49 silly addNameRange     '0.7.1',
+49 silly addNameRange     '0.7.2',
+49 silly addNameRange     '0.7.3',
+49 silly addNameRange     '0.8.0',
+49 silly addNameRange     '0.8.1',
+49 silly addNameRange     '0.8.2',
+49 silly addNameRange     '0.9.0',
+49 silly addNameRange     '0.9.1',
+49 silly addNameRange     '1.0.0',
+49 silly addNameRange     '1.1.0',
+49 silly addNameRange     '2.0.0',
+49 silly addNameRange     '2.0.1',
+49 silly addNameRange     '2.1.0',
+49 silly addNameRange     '2.1.1',
+49 silly addNameRange     '2.1.2',
+49 silly addNameRange     '2.1.3',
+49 silly addNameRange     '2.1.4',
+49 silly addNameRange     '2.1.5',
+49 silly addNameRange     '2.1.6',
+49 silly addNameRange     '2.1.7',
+49 silly addNameRange     '2.1.8',
+49 silly addNameRange     '2.1.9',
+49 silly addNameRange     '2.1.10',
+49 silly addNameRange     '2.1.11',
+49 silly addNameRange     '2.2.0',
+49 silly addNameRange     '2.3.0',
+49 silly addNameRange     '2.4.0',
+49 silly addNameRange     '2.4.1',
+49 silly addNameRange     '2.4.2',
+49 silly addNameRange     '2.4.3',
+49 silly addNameRange     '2.4.4',
+49 silly addNameRange     '2.5.0',
+49 silly addNameRange     '2.5.1',
+49 silly addNameRange     '2.5.2',
+49 silly addNameRange     '2.5.3',
+49 silly addNameRange     '2.5.4',
+49 silly addNameRange     '2.5.5',
+49 silly addNameRange     '2.5.6',
+49 silly addNameRange     '2.5.7',
+49 silly addNameRange     '2.5.8',
+49 silly addNameRange     '2.5.9',
+49 silly addNameRange     '2.5.10',
+49 silly addNameRange     '2.5.11',
+49 silly addNameRange     '2.6.0',
+49 silly addNameRange     '2.6.1',
+49 silly addNameRange     '2.6.2',
+49 silly addNameRange     '2.6.3',
+49 silly addNameRange     '2.7.0',
+49 silly addNameRange     '2.8.0',
+49 silly addNameRange     '2.9.1-rc1',
+49 silly addNameRange     '2.9.1-rc2',
+49 silly addNameRange     '2.9.1-rc3',
+49 silly addNameRange     '2.9.1' ] ]
+50 silly addNamed jshint@2.9.1
+51 verbose addNamed "2.9.1" is a plain semver version for jshint
+52 silly mapToRegistry name jshint
+53 silly mapToRegistry using default registry
+54 silly mapToRegistry registry https://registry.npmjs.org/
+55 silly mapToRegistry uri https://registry.npmjs.org/jshint
+56 verbose addRemoteTarball https://registry.npmjs.org/jshint/-/jshint-2.9.1.tgz not in flight; adding
+57 verbose addRemoteTarball [ 'https://registry.npmjs.org/jshint/-/jshint-2.9.1.tgz',
+57 verbose addRemoteTarball   '3136b68f8b6fa37423aacb8ec5e18a1ada7a2638' ]
+58 info retry fetch attempt 1 at 7:07:26 PM
+59 info attempt registry request try #1 at 7:07:26 PM
+60 http fetch GET https://registry.npmjs.org/jshint/-/jshint-2.9.1.tgz
+61 http fetch 200 https://registry.npmjs.org/jshint/-/jshint-2.9.1.tgz
+62 silly fetchAndShaCheck shasum 3136b68f8b6fa37423aacb8ec5e18a1ada7a2638
+63 verbose addTmpTarball /var/folders/2c/1gpql7pd6_34yx1skwjj8src0000gn/T/npm-2168-c59960e7/registry.npmjs.org/jshint/-/jshint-2.9.1.tgz not in flight; adding
+64 verbose addTmpTarball already have metadata; skipping unpack for jshint@2.9.1
+65 silly cache afterAdd jshint@2.9.1
+66 verbose afterAdd /Users/iTurbo/.npm/jshint/2.9.1/package/package.json not in flight; writing
+67 verbose afterAdd /Users/iTurbo/.npm/jshint/2.9.1/package/package.json written
+68 silly fetchNamedPackageData cli
+69 silly mapToRegistry name cli
+70 silly mapToRegistry using default registry
+71 silly mapToRegistry registry https://registry.npmjs.org/
+72 silly mapToRegistry uri https://registry.npmjs.org/cli
+73 silly fetchNamedPackageData console-browserify
+74 silly mapToRegistry name console-browserify
+75 silly mapToRegistry using default registry
+76 silly mapToRegistry registry https://registry.npmjs.org/
+77 silly mapToRegistry uri https://registry.npmjs.org/console-browserify
+78 silly fetchNamedPackageData exit
+79 silly mapToRegistry name exit
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry uri https://registry.npmjs.org/exit
+83 silly fetchNamedPackageData htmlparser2
+84 silly mapToRegistry name htmlparser2
+85 silly mapToRegistry using default registry
+86 silly mapToRegistry registry https://registry.npmjs.org/
+87 silly mapToRegistry uri https://registry.npmjs.org/htmlparser2
+88 silly fetchNamedPackageData minimatch
+89 silly mapToRegistry name minimatch
+90 silly mapToRegistry using default registry
+91 silly mapToRegistry registry https://registry.npmjs.org/
+92 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+93 silly fetchNamedPackageData shelljs
+94 silly mapToRegistry name shelljs
+95 silly mapToRegistry using default registry
+96 silly mapToRegistry registry https://registry.npmjs.org/
+97 silly mapToRegistry uri https://registry.npmjs.org/shelljs
+98 silly fetchNamedPackageData strip-json-comments
+99 silly mapToRegistry name strip-json-comments
+100 silly mapToRegistry using default registry
+101 silly mapToRegistry registry https://registry.npmjs.org/
+102 silly mapToRegistry uri https://registry.npmjs.org/strip-json-comments
+103 silly fetchNamedPackageData lodash
+104 silly mapToRegistry name lodash
+105 silly mapToRegistry using default registry
+106 silly mapToRegistry registry https://registry.npmjs.org/
+107 silly mapToRegistry uri https://registry.npmjs.org/lodash
+108 verbose request uri https://registry.npmjs.org/exit
+109 verbose request no auth needed
+110 info attempt registry request try #1 at 7:07:27 PM
+111 verbose etag "66GA3RUQR76WJVRZF6ITVOZPO"
+112 http request GET https://registry.npmjs.org/exit
+113 verbose request uri https://registry.npmjs.org/console-browserify
+114 verbose request no auth needed
+115 info attempt registry request try #1 at 7:07:27 PM
+116 verbose etag "9P4UVMYNOTKBMJP46LG2SRWG"
+117 http request GET https://registry.npmjs.org/console-browserify
+118 verbose request uri https://registry.npmjs.org/cli
+119 verbose request no auth needed
+120 info attempt registry request try #1 at 7:07:27 PM
+121 verbose etag "6FXOJ0FZMLJ3BJ1HC1AD0EQYG"
+122 http request GET https://registry.npmjs.org/cli
+123 verbose request uri https://registry.npmjs.org/htmlparser2
+124 verbose request no auth needed
+125 info attempt registry request try #1 at 7:07:27 PM
+126 verbose etag "45LE8UAY6UOSCJ58E1JGCGLEE"
+127 http request GET https://registry.npmjs.org/htmlparser2
+128 verbose request uri https://registry.npmjs.org/strip-json-comments
+129 verbose request no auth needed
+130 info attempt registry request try #1 at 7:07:27 PM
+131 verbose etag "CCHEXQ2QONC2QKAUR2L944ICN"
+132 http request GET https://registry.npmjs.org/strip-json-comments
+133 verbose request uri https://registry.npmjs.org/minimatch
+134 verbose request no auth needed
+135 info attempt registry request try #1 at 7:07:27 PM
+136 verbose etag "4LFAQ3IFUTR8Q3IE1RPPWNQGA"
+137 http request GET https://registry.npmjs.org/minimatch
+138 verbose request uri https://registry.npmjs.org/shelljs
+139 verbose request no auth needed
+140 info attempt registry request try #1 at 7:07:27 PM
+141 verbose etag "NX6NTJ0HOBLRKA7UARS39IIE"
+142 http request GET https://registry.npmjs.org/shelljs
+143 verbose request uri https://registry.npmjs.org/lodash
+144 verbose request no auth needed
+145 info attempt registry request try #1 at 7:07:27 PM
+146 verbose etag "CGTYPVJRPPNJ9QH7BTBZ8IZ1I"
+147 http request GET https://registry.npmjs.org/lodash
+148 http 304 https://registry.npmjs.org/console-browserify
+149 verbose headers { date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+149 verbose headers   via: '1.1 varnish',
+149 verbose headers   'cache-control': 'max-age=60',
+149 verbose headers   etag: '"9P4UVMYNOTKBMJP46LG2SRWG"',
+149 verbose headers   age: '39',
+149 verbose headers   connection: 'keep-alive',
+149 verbose headers   'x-served-by': 'cache-ams4147-AMS',
+149 verbose headers   'x-cache': 'HIT',
+149 verbose headers   'x-cache-hits': '1',
+149 verbose headers   'x-timer': 'S1454090847.475388,VS0,VE0',
+149 verbose headers   vary: 'Accept' }
+150 silly get cb [ 304,
+150 silly get   { date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+150 silly get     via: '1.1 varnish',
+150 silly get     'cache-control': 'max-age=60',
+150 silly get     etag: '"9P4UVMYNOTKBMJP46LG2SRWG"',
+150 silly get     age: '39',
+150 silly get     connection: 'keep-alive',
+150 silly get     'x-served-by': 'cache-ams4147-AMS',
+150 silly get     'x-cache': 'HIT',
+150 silly get     'x-cache-hits': '1',
+150 silly get     'x-timer': 'S1454090847.475388,VS0,VE0',
+150 silly get     vary: 'Accept' } ]
+151 verbose etag https://registry.npmjs.org/console-browserify from cache
+152 verbose get saving console-browserify to /Users/iTurbo/.npm/registry.npmjs.org/console-browserify/.cache.json
+153 http 304 https://registry.npmjs.org/strip-json-comments
+154 verbose headers { date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+154 verbose headers   via: '1.1 varnish',
+154 verbose headers   'cache-control': 'max-age=300',
+154 verbose headers   etag: '"CCHEXQ2QONC2QKAUR2L944ICN"',
+154 verbose headers   age: '197',
+154 verbose headers   connection: 'keep-alive',
+154 verbose headers   'x-served-by': 'cache-ams4122-AMS',
+154 verbose headers   'x-cache': 'HIT',
+154 verbose headers   'x-cache-hits': '2',
+154 verbose headers   'x-timer': 'S1454090847.481028,VS0,VE0',
+154 verbose headers   vary: 'Accept' }
+155 silly get cb [ 304,
+155 silly get   { date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+155 silly get     via: '1.1 varnish',
+155 silly get     'cache-control': 'max-age=300',
+155 silly get     etag: '"CCHEXQ2QONC2QKAUR2L944ICN"',
+155 silly get     age: '197',
+155 silly get     connection: 'keep-alive',
+155 silly get     'x-served-by': 'cache-ams4122-AMS',
+155 silly get     'x-cache': 'HIT',
+155 silly get     'x-cache-hits': '2',
+155 silly get     'x-timer': 'S1454090847.481028,VS0,VE0',
+155 silly get     vary: 'Accept' } ]
+156 verbose etag https://registry.npmjs.org/strip-json-comments from cache
+157 verbose get saving strip-json-comments to /Users/iTurbo/.npm/registry.npmjs.org/strip-json-comments/.cache.json
+158 silly resolveWithNewModule console-browserify@1.1.0 checking installable status
+159 silly cache add args [ 'console-browserify@1.1.x', null ]
+160 verbose cache add spec console-browserify@1.1.x
+161 silly cache add parsed spec Result {
+161 silly cache add   raw: 'console-browserify@1.1.x',
+161 silly cache add   scope: null,
+161 silly cache add   name: 'console-browserify',
+161 silly cache add   rawSpec: '1.1.x',
+161 silly cache add   spec: '>=1.1.0 <1.2.0',
+161 silly cache add   type: 'range' }
+162 silly addNamed console-browserify@>=1.1.0 <1.2.0
+163 verbose addNamed ">=1.1.0 <1.2.0" is a valid semver range for console-browserify
+164 silly addNameRange { name: 'console-browserify',
+164 silly addNameRange   range: '>=1.1.0 <1.2.0',
+164 silly addNameRange   hasData: false }
+165 silly mapToRegistry name console-browserify
+166 silly mapToRegistry using default registry
+167 silly mapToRegistry registry https://registry.npmjs.org/
+168 silly mapToRegistry uri https://registry.npmjs.org/console-browserify
+169 verbose addNameRange registry:https://registry.npmjs.org/console-browserify not in flight; fetching
+170 verbose get https://registry.npmjs.org/console-browserify not expired, no request
+171 silly addNameRange number 2 { name: 'console-browserify',
+171 silly addNameRange   range: '>=1.1.0 <1.2.0',
+171 silly addNameRange   hasData: true }
+172 silly addNameRange versions [ 'console-browserify',
+172 silly addNameRange   [ '0.1.0',
+172 silly addNameRange     '0.1.1',
+172 silly addNameRange     '0.1.2',
+172 silly addNameRange     '0.1.3',
+172 silly addNameRange     '0.1.4',
+172 silly addNameRange     '0.1.5',
+172 silly addNameRange     '0.1.6',
+172 silly addNameRange     '1.0.1',
+172 silly addNameRange     '1.0.2',
+172 silly addNameRange     '1.0.3',
+172 silly addNameRange     '1.1.0' ] ]
+173 silly addNamed console-browserify@1.1.0
+174 verbose addNamed "1.1.0" is a plain semver version for console-browserify
+175 silly cache afterAdd console-browserify@1.1.0
+176 verbose afterAdd /Users/iTurbo/.npm/console-browserify/1.1.0/package/package.json not in flight; writing
+177 http 304 https://registry.npmjs.org/exit
+178 verbose headers { date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+178 verbose headers   via: '1.1 varnish',
+178 verbose headers   'cache-control': 'max-age=60',
+178 verbose headers   etag: '"66GA3RUQR76WJVRZF6ITVOZPO"',
+178 verbose headers   age: '56',
+178 verbose headers   connection: 'keep-alive',
+178 verbose headers   'x-served-by': 'cache-ams4132-AMS',
+178 verbose headers   'x-cache': 'HIT',
+178 verbose headers   'x-cache-hits': '1',
+178 verbose headers   'x-timer': 'S1454090847.490716,VS0,VE0',
+178 verbose headers   vary: 'Accept' }
+179 silly get cb [ 304,
+179 silly get   { date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+179 silly get     via: '1.1 varnish',
+179 silly get     'cache-control': 'max-age=60',
+179 silly get     etag: '"66GA3RUQR76WJVRZF6ITVOZPO"',
+179 silly get     age: '56',
+179 silly get     connection: 'keep-alive',
+179 silly get     'x-served-by': 'cache-ams4132-AMS',
+179 silly get     'x-cache': 'HIT',
+179 silly get     'x-cache-hits': '1',
+179 silly get     'x-timer': 'S1454090847.490716,VS0,VE0',
+179 silly get     vary: 'Accept' } ]
+180 verbose etag https://registry.npmjs.org/exit from cache
+181 verbose get saving exit to /Users/iTurbo/.npm/registry.npmjs.org/exit/.cache.json
+182 silly resolveWithNewModule strip-json-comments@1.0.4 checking installable status
+183 silly cache add args [ 'strip-json-comments@1.0.x', null ]
+184 verbose cache add spec strip-json-comments@1.0.x
+185 silly cache add parsed spec Result {
+185 silly cache add   raw: 'strip-json-comments@1.0.x',
+185 silly cache add   scope: null,
+185 silly cache add   name: 'strip-json-comments',
+185 silly cache add   rawSpec: '1.0.x',
+185 silly cache add   spec: '>=1.0.0 <1.1.0',
+185 silly cache add   type: 'range' }
+186 silly addNamed strip-json-comments@>=1.0.0 <1.1.0
+187 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for strip-json-comments
+188 silly addNameRange { name: 'strip-json-comments',
+188 silly addNameRange   range: '>=1.0.0 <1.1.0',
+188 silly addNameRange   hasData: false }
+189 silly mapToRegistry name strip-json-comments
+190 silly mapToRegistry using default registry
+191 silly mapToRegistry registry https://registry.npmjs.org/
+192 silly mapToRegistry uri https://registry.npmjs.org/strip-json-comments
+193 verbose addNameRange registry:https://registry.npmjs.org/strip-json-comments not in flight; fetching
+194 verbose get https://registry.npmjs.org/strip-json-comments not expired, no request
+195 silly addNameRange number 2 { name: 'strip-json-comments',
+195 silly addNameRange   range: '>=1.0.0 <1.1.0',
+195 silly addNameRange   hasData: true }
+196 silly addNameRange versions [ 'strip-json-comments',
+196 silly addNameRange   [ '0.1.0',
+196 silly addNameRange     '0.1.1',
+196 silly addNameRange     '0.1.2',
+196 silly addNameRange     '0.1.3',
+196 silly addNameRange     '1.0.0',
+196 silly addNameRange     '1.0.1',
+196 silly addNameRange     '1.0.2',
+196 silly addNameRange     '1.0.3',
+196 silly addNameRange     '1.0.4',
+196 silly addNameRange     '2.0.0' ] ]
+197 silly addNamed strip-json-comments@1.0.4
+198 verbose addNamed "1.0.4" is a plain semver version for strip-json-comments
+199 verbose afterAdd /Users/iTurbo/.npm/console-browserify/1.1.0/package/package.json written
+200 silly resolveWithNewModule exit@0.1.2 checking installable status
+201 silly cache add args [ 'exit@0.1.x', null ]
+202 verbose cache add spec exit@0.1.x
+203 silly cache add parsed spec Result {
+203 silly cache add   raw: 'exit@0.1.x',
+203 silly cache add   scope: null,
+203 silly cache add   name: 'exit',
+203 silly cache add   rawSpec: '0.1.x',
+203 silly cache add   spec: '>=0.1.0 <0.2.0',
+203 silly cache add   type: 'range' }
+204 silly addNamed exit@>=0.1.0 <0.2.0
+205 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for exit
+206 silly addNameRange { name: 'exit', range: '>=0.1.0 <0.2.0', hasData: false }
+207 silly mapToRegistry name exit
+208 silly mapToRegistry using default registry
+209 silly mapToRegistry registry https://registry.npmjs.org/
+210 silly mapToRegistry uri https://registry.npmjs.org/exit
+211 verbose addNameRange registry:https://registry.npmjs.org/exit not in flight; fetching
+212 silly cache afterAdd strip-json-comments@1.0.4
+213 verbose afterAdd /Users/iTurbo/.npm/strip-json-comments/1.0.4/package/package.json not in flight; writing
+214 verbose get https://registry.npmjs.org/exit not expired, no request
+215 silly addNameRange number 2 { name: 'exit', range: '>=0.1.0 <0.2.0', hasData: true }
+216 silly addNameRange versions [ 'exit', [ '0.1.0', '0.1.1', '0.1.2' ] ]
+217 silly addNamed exit@0.1.2
+218 verbose addNamed "0.1.2" is a plain semver version for exit
+219 verbose afterAdd /Users/iTurbo/.npm/strip-json-comments/1.0.4/package/package.json written
+220 silly cache afterAdd exit@0.1.2
+221 verbose afterAdd /Users/iTurbo/.npm/exit/0.1.2/package/package.json not in flight; writing
+222 http 304 https://registry.npmjs.org/minimatch
+223 verbose headers { date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+223 verbose headers   via: '1.1 varnish',
+223 verbose headers   'cache-control': 'max-age=300',
+223 verbose headers   etag: '"4LFAQ3IFUTR8Q3IE1RPPWNQGA"',
+223 verbose headers   age: '263',
+223 verbose headers   connection: 'keep-alive',
+223 verbose headers   'x-served-by': 'cache-ams4127-AMS',
+223 verbose headers   'x-cache': 'HIT',
+223 verbose headers   'x-cache-hits': '13',
+223 verbose headers   'x-timer': 'S1454090847.511776,VS0,VE0',
+223 verbose headers   vary: 'Accept' }
+224 silly get cb [ 304,
+224 silly get   { date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+224 silly get     via: '1.1 varnish',
+224 silly get     'cache-control': 'max-age=300',
+224 silly get     etag: '"4LFAQ3IFUTR8Q3IE1RPPWNQGA"',
+224 silly get     age: '263',
+224 silly get     connection: 'keep-alive',
+224 silly get     'x-served-by': 'cache-ams4127-AMS',
+224 silly get     'x-cache': 'HIT',
+224 silly get     'x-cache-hits': '13',
+224 silly get     'x-timer': 'S1454090847.511776,VS0,VE0',
+224 silly get     vary: 'Accept' } ]
+225 verbose etag https://registry.npmjs.org/minimatch from cache
+226 verbose get saving minimatch to /Users/iTurbo/.npm/registry.npmjs.org/minimatch/.cache.json
+227 verbose afterAdd /Users/iTurbo/.npm/exit/0.1.2/package/package.json written
+228 silly resolveWithNewModule minimatch@2.0.10 checking installable status
+229 silly cache add args [ 'minimatch@2.0.x', null ]
+230 verbose cache add spec minimatch@2.0.x
+231 silly cache add parsed spec Result {
+231 silly cache add   raw: 'minimatch@2.0.x',
+231 silly cache add   scope: null,
+231 silly cache add   name: 'minimatch',
+231 silly cache add   rawSpec: '2.0.x',
+231 silly cache add   spec: '>=2.0.0 <2.1.0',
+231 silly cache add   type: 'range' }
+232 silly addNamed minimatch@>=2.0.0 <2.1.0
+233 verbose addNamed ">=2.0.0 <2.1.0" is a valid semver range for minimatch
+234 silly addNameRange { name: 'minimatch', range: '>=2.0.0 <2.1.0', hasData: false }
+235 silly mapToRegistry name minimatch
+236 silly mapToRegistry using default registry
+237 silly mapToRegistry registry https://registry.npmjs.org/
+238 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+239 verbose addNameRange registry:https://registry.npmjs.org/minimatch not in flight; fetching
+240 verbose get https://registry.npmjs.org/minimatch not expired, no request
+241 silly addNameRange number 2 { name: 'minimatch', range: '>=2.0.0 <2.1.0', hasData: true }
+242 silly addNameRange versions [ 'minimatch',
+242 silly addNameRange   [ '0.0.1',
+242 silly addNameRange     '0.0.2',
+242 silly addNameRange     '0.0.4',
+242 silly addNameRange     '0.0.5',
+242 silly addNameRange     '0.1.1',
+242 silly addNameRange     '0.1.2',
+242 silly addNameRange     '0.1.3',
+242 silly addNameRange     '0.1.4',
+242 silly addNameRange     '0.1.5',
+242 silly addNameRange     '0.2.0',
+242 silly addNameRange     '0.2.2',
+242 silly addNameRange     '0.2.3',
+242 silly addNameRange     '0.2.4',
+242 silly addNameRange     '0.2.5',
+242 silly addNameRange     '0.2.6',
+242 silly addNameRange     '0.2.7',
+242 silly addNameRange     '0.2.8',
+242 silly addNameRange     '0.2.9',
+242 silly addNameRange     '0.2.10',
+242 silly addNameRange     '0.2.11',
+242 silly addNameRange     '0.2.12',
+242 silly addNameRange     '0.2.13',
+242 silly addNameRange     '0.2.14',
+242 silly addNameRange     '0.3.0',
+242 silly addNameRange     '0.4.0',
+242 silly addNameRange     '1.0.0',
+242 silly addNameRange     '2.0.0',
+242 silly addNameRange     '2.0.1',
+242 silly addNameRange     '2.0.2',
+242 silly addNameRange     '2.0.3',
+242 silly addNameRange     '2.0.4',
+242 silly addNameRange     '2.0.5',
+242 silly addNameRange     '2.0.6',
+242 silly addNameRange     '2.0.7',
+242 silly addNameRange     '2.0.8',
+242 silly addNameRange     '2.0.9',
+242 silly addNameRange     '2.0.10',
+242 silly addNameRange     '3.0.0' ] ]
+243 silly addNamed minimatch@2.0.10
+244 verbose addNamed "2.0.10" is a plain semver version for minimatch
+245 silly cache afterAdd minimatch@2.0.10
+246 verbose afterAdd /Users/iTurbo/.npm/minimatch/2.0.10/package/package.json not in flight; writing
+247 verbose afterAdd /Users/iTurbo/.npm/minimatch/2.0.10/package/package.json written
+248 http 200 https://registry.npmjs.org/shelljs
+249 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+249 verbose headers   etag: '"9GSFSE9SNPIOFGXJW6JF18WN7"',
+249 verbose headers   'content-type': 'application/json',
+249 verbose headers   'cache-control': 'max-age=300',
+249 verbose headers   'content-length': '54244',
+249 verbose headers   'accept-ranges': 'bytes',
+249 verbose headers   date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+249 verbose headers   via: '1.1 varnish',
+249 verbose headers   age: '62',
+249 verbose headers   connection: 'keep-alive',
+249 verbose headers   'x-served-by': 'cache-ams4139-AMS',
+249 verbose headers   'x-cache': 'HIT',
+249 verbose headers   'x-cache-hits': '1',
+249 verbose headers   'x-timer': 'S1454090847.478374,VS0,VE0',
+249 verbose headers   vary: 'Accept' }
+250 silly get cb [ 200,
+250 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+250 silly get     etag: '"9GSFSE9SNPIOFGXJW6JF18WN7"',
+250 silly get     'content-type': 'application/json',
+250 silly get     'cache-control': 'max-age=300',
+250 silly get     'content-length': '54244',
+250 silly get     'accept-ranges': 'bytes',
+250 silly get     date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+250 silly get     via: '1.1 varnish',
+250 silly get     age: '62',
+250 silly get     connection: 'keep-alive',
+250 silly get     'x-served-by': 'cache-ams4139-AMS',
+250 silly get     'x-cache': 'HIT',
+250 silly get     'x-cache-hits': '1',
+250 silly get     'x-timer': 'S1454090847.478374,VS0,VE0',
+250 silly get     vary: 'Accept' } ]
+251 verbose get saving shelljs to /Users/iTurbo/.npm/registry.npmjs.org/shelljs/.cache.json
+252 http 200 https://registry.npmjs.org/cli
+253 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+253 verbose headers   etag: '"AXCVNLXA9RJGJTLBZLSU3XFZ5"',
+253 verbose headers   'content-type': 'application/json',
+253 verbose headers   'cache-control': 'max-age=300',
+253 verbose headers   'content-length': '64176',
+253 verbose headers   'accept-ranges': 'bytes',
+253 verbose headers   date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+253 verbose headers   via: '1.1 varnish',
+253 verbose headers   age: '131',
+253 verbose headers   connection: 'keep-alive',
+253 verbose headers   'x-served-by': 'cache-ams4125-AMS',
+253 verbose headers   'x-cache': 'HIT',
+253 verbose headers   'x-cache-hits': '2',
+253 verbose headers   'x-timer': 'S1454090847.471912,VS0,VE0',
+253 verbose headers   vary: 'Accept' }
+254 silly get cb [ 200,
+254 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+254 silly get     etag: '"AXCVNLXA9RJGJTLBZLSU3XFZ5"',
+254 silly get     'content-type': 'application/json',
+254 silly get     'cache-control': 'max-age=300',
+254 silly get     'content-length': '64176',
+254 silly get     'accept-ranges': 'bytes',
+254 silly get     date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+254 silly get     via: '1.1 varnish',
+254 silly get     age: '131',
+254 silly get     connection: 'keep-alive',
+254 silly get     'x-served-by': 'cache-ams4125-AMS',
+254 silly get     'x-cache': 'HIT',
+254 silly get     'x-cache-hits': '2',
+254 silly get     'x-timer': 'S1454090847.471912,VS0,VE0',
+254 silly get     vary: 'Accept' } ]
+255 verbose get saving cli to /Users/iTurbo/.npm/registry.npmjs.org/cli/.cache.json
+256 silly resolveWithNewModule shelljs@0.3.0 checking installable status
+257 silly cache add args [ 'shelljs@0.3.x', null ]
+258 verbose cache add spec shelljs@0.3.x
+259 silly cache add parsed spec Result {
+259 silly cache add   raw: 'shelljs@0.3.x',
+259 silly cache add   scope: null,
+259 silly cache add   name: 'shelljs',
+259 silly cache add   rawSpec: '0.3.x',
+259 silly cache add   spec: '>=0.3.0 <0.4.0',
+259 silly cache add   type: 'range' }
+260 silly addNamed shelljs@>=0.3.0 <0.4.0
+261 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for shelljs
+262 silly addNameRange { name: 'shelljs', range: '>=0.3.0 <0.4.0', hasData: false }
+263 silly mapToRegistry name shelljs
+264 silly mapToRegistry using default registry
+265 silly mapToRegistry registry https://registry.npmjs.org/
+266 silly mapToRegistry uri https://registry.npmjs.org/shelljs
+267 verbose addNameRange registry:https://registry.npmjs.org/shelljs not in flight; fetching
+268 verbose get https://registry.npmjs.org/shelljs not expired, no request
+269 silly addNameRange number 2 { name: 'shelljs', range: '>=0.3.0 <0.4.0', hasData: true }
+270 silly addNameRange versions [ 'shelljs',
+270 silly addNameRange   [ '0.0.1',
+270 silly addNameRange     '0.0.2',
+270 silly addNameRange     '0.0.3',
+270 silly addNameRange     '0.0.4',
+270 silly addNameRange     '0.0.5',
+270 silly addNameRange     '0.0.6',
+270 silly addNameRange     '0.0.7',
+270 silly addNameRange     '0.0.8',
+270 silly addNameRange     '0.0.9',
+270 silly addNameRange     '0.1.0',
+270 silly addNameRange     '0.1.1',
+270 silly addNameRange     '0.1.2',
+270 silly addNameRange     '0.1.3',
+270 silly addNameRange     '0.1.4',
+270 silly addNameRange     '0.2.0',
+270 silly addNameRange     '0.2.1',
+270 silly addNameRange     '0.2.2',
+270 silly addNameRange     '0.2.3',
+270 silly addNameRange     '0.2.4',
+270 silly addNameRange     '0.2.5',
+270 silly addNameRange     '0.2.6',
+270 silly addNameRange     '0.3.0',
+270 silly addNameRange     '0.4.0',
+270 silly addNameRange     '0.5.0',
+270 silly addNameRange     '0.5.1',
+270 silly addNameRange     '0.5.2',
+270 silly addNameRange     '0.5.3',
+270 silly addNameRange     '0.0.1-alpha1',
+270 silly addNameRange     '0.0.2-pre1',
+270 silly addNameRange     '0.0.4-pre1',
+270 silly addNameRange     '0.0.5-pre1',
+270 silly addNameRange     '0.0.5-pre2',
+270 silly addNameRange     '0.0.5-pre3',
+270 silly addNameRange     '0.0.5-pre4',
+270 silly addNameRange     '0.0.6-pre1',
+270 silly addNameRange     '0.0.6-pre2' ] ]
+271 silly addNamed shelljs@0.3.0
+272 verbose addNamed "0.3.0" is a plain semver version for shelljs
+273 silly resolveWithNewModule cli@0.6.6 checking installable status
+274 silly cache add args [ 'cli@0.6.x', null ]
+275 verbose cache add spec cli@0.6.x
+276 silly cache add parsed spec Result {
+276 silly cache add   raw: 'cli@0.6.x',
+276 silly cache add   scope: null,
+276 silly cache add   name: 'cli',
+276 silly cache add   rawSpec: '0.6.x',
+276 silly cache add   spec: '>=0.6.0 <0.7.0',
+276 silly cache add   type: 'range' }
+277 silly addNamed cli@>=0.6.0 <0.7.0
+278 verbose addNamed ">=0.6.0 <0.7.0" is a valid semver range for cli
+279 silly addNameRange { name: 'cli', range: '>=0.6.0 <0.7.0', hasData: false }
+280 silly mapToRegistry name cli
+281 silly mapToRegistry using default registry
+282 silly mapToRegistry registry https://registry.npmjs.org/
+283 silly mapToRegistry uri https://registry.npmjs.org/cli
+284 verbose addNameRange registry:https://registry.npmjs.org/cli not in flight; fetching
+285 verbose get https://registry.npmjs.org/cli not expired, no request
+286 silly addNameRange number 2 { name: 'cli', range: '>=0.6.0 <0.7.0', hasData: true }
+287 silly addNameRange versions [ 'cli',
+287 silly addNameRange   [ '0.1.0',
+287 silly addNameRange     '0.1.1',
+287 silly addNameRange     '0.1.3',
+287 silly addNameRange     '0.1.4',
+287 silly addNameRange     '0.1.5',
+287 silly addNameRange     '0.1.6',
+287 silly addNameRange     '0.1.7',
+287 silly addNameRange     '0.1.8',
+287 silly addNameRange     '0.1.9',
+287 silly addNameRange     '0.2.0',
+287 silly addNameRange     '0.2.1-1',
+287 silly addNameRange     '0.2.2-1',
+287 silly addNameRange     '0.2.3-1',
+287 silly addNameRange     '0.2.3-2',
+287 silly addNameRange     '0.2.3-3',
+287 silly addNameRange     '0.2.3-4',
+287 silly addNameRange     '0.2.3-5',
+287 silly addNameRange     '0.2.4-1',
+287 silly addNameRange     '0.2.4-2',
+287 silly addNameRange     '0.2.5',
+287 silly addNameRange     '0.2.6',
+287 silly addNameRange     '0.2.7',
+287 silly addNameRange     '0.2.8',
+287 silly addNameRange     '0.3.0',
+287 silly addNameRange     '0.3.1',
+287 silly addNameRange     '0.3.2',
+287 silly addNameRange     '0.3.3',
+287 silly addNameRange     '0.3.4',
+287 silly addNameRange     '0.3.5',
+287 silly addNameRange     '0.3.6',
+287 silly addNameRange     '0.3.7',
+287 silly addNameRange     '0.3.8',
+287 silly addNameRange     '0.3.9',
+287 silly addNameRange     '0.4.0',
+287 silly addNameRange     '0.4.1',
+287 silly addNameRange     '0.4.2',
+287 silly addNameRange     '0.4.3',
+287 silly addNameRange     '0.4.4',
+287 silly addNameRange     '0.4.4-1',
+287 silly addNameRange     '0.4.4-2',
+287 silly addNameRange     '0.4.5',
+287 silly addNameRange     '0.5.0',
+287 silly addNameRange     '0.6.0',
+287 silly addNameRange     '0.6.2',
+287 silly addNameRange     '0.6.3',
+287 silly addNameRange     '0.6.4',
+287 silly addNameRange     '0.6.5',
+287 silly addNameRange     '0.6.6',
+287 silly addNameRange     '0.7.0',
+287 silly addNameRange     '0.7.1',
+287 silly addNameRange     '0.8.0',
+287 silly addNameRange     '0.9.0',
+287 silly addNameRange     '0.10.0',
+287 silly addNameRange     '0.11.0',
+287 silly addNameRange     '0.11.1' ] ]
+288 silly addNamed cli@0.6.6
+289 verbose addNamed "0.6.6" is a plain semver version for cli
+290 silly cache afterAdd shelljs@0.3.0
+291 verbose afterAdd /Users/iTurbo/.npm/shelljs/0.3.0/package/package.json not in flight; writing
+292 silly cache afterAdd cli@0.6.6
+293 verbose afterAdd /Users/iTurbo/.npm/cli/0.6.6/package/package.json not in flight; writing
+294 verbose afterAdd /Users/iTurbo/.npm/shelljs/0.3.0/package/package.json written
+295 verbose afterAdd /Users/iTurbo/.npm/cli/0.6.6/package/package.json written
+296 http 200 https://registry.npmjs.org/htmlparser2
+297 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+297 verbose headers   etag: '"4KGRIU0LGQIIV27NDXGKWPARH"',
+297 verbose headers   'content-type': 'application/json',
+297 verbose headers   'cache-control': 'max-age=300',
+297 verbose headers   'content-length': '71361',
+297 verbose headers   'accept-ranges': 'bytes',
+297 verbose headers   date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+297 verbose headers   via: '1.1 varnish',
+297 verbose headers   age: '171',
+297 verbose headers   connection: 'keep-alive',
+297 verbose headers   'x-served-by': 'cache-ams4120-AMS',
+297 verbose headers   'x-cache': 'HIT',
+297 verbose headers   'x-cache-hits': '1',
+297 verbose headers   'x-timer': 'S1454090847.491616,VS0,VE0',
+297 verbose headers   vary: 'Accept' }
+298 silly get cb [ 200,
+298 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+298 silly get     etag: '"4KGRIU0LGQIIV27NDXGKWPARH"',
+298 silly get     'content-type': 'application/json',
+298 silly get     'cache-control': 'max-age=300',
+298 silly get     'content-length': '71361',
+298 silly get     'accept-ranges': 'bytes',
+298 silly get     date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+298 silly get     via: '1.1 varnish',
+298 silly get     age: '171',
+298 silly get     connection: 'keep-alive',
+298 silly get     'x-served-by': 'cache-ams4120-AMS',
+298 silly get     'x-cache': 'HIT',
+298 silly get     'x-cache-hits': '1',
+298 silly get     'x-timer': 'S1454090847.491616,VS0,VE0',
+298 silly get     vary: 'Accept' } ]
+299 verbose get saving htmlparser2 to /Users/iTurbo/.npm/registry.npmjs.org/htmlparser2/.cache.json
+300 silly resolveWithNewModule htmlparser2@3.8.3 checking installable status
+301 silly cache add args [ 'htmlparser2@3.8.x', null ]
+302 verbose cache add spec htmlparser2@3.8.x
+303 silly cache add parsed spec Result {
+303 silly cache add   raw: 'htmlparser2@3.8.x',
+303 silly cache add   scope: null,
+303 silly cache add   name: 'htmlparser2',
+303 silly cache add   rawSpec: '3.8.x',
+303 silly cache add   spec: '>=3.8.0 <3.9.0',
+303 silly cache add   type: 'range' }
+304 silly addNamed htmlparser2@>=3.8.0 <3.9.0
+305 verbose addNamed ">=3.8.0 <3.9.0" is a valid semver range for htmlparser2
+306 silly addNameRange { name: 'htmlparser2', range: '>=3.8.0 <3.9.0', hasData: false }
+307 silly mapToRegistry name htmlparser2
+308 silly mapToRegistry using default registry
+309 silly mapToRegistry registry https://registry.npmjs.org/
+310 silly mapToRegistry uri https://registry.npmjs.org/htmlparser2
+311 verbose addNameRange registry:https://registry.npmjs.org/htmlparser2 not in flight; fetching
+312 verbose get https://registry.npmjs.org/htmlparser2 not expired, no request
+313 silly addNameRange number 2 { name: 'htmlparser2', range: '>=3.8.0 <3.9.0', hasData: true }
+314 silly addNameRange versions [ 'htmlparser2',
+314 silly addNameRange   [ '1.0.0',
+314 silly addNameRange     '1.1.0',
+314 silly addNameRange     '1.5.0',
+314 silly addNameRange     '2.0.0',
+314 silly addNameRange     '2.0.1',
+314 silly addNameRange     '2.1.0',
+314 silly addNameRange     '2.1.1',
+314 silly addNameRange     '2.1.2',
+314 silly addNameRange     '2.1.3',
+314 silly addNameRange     '2.2.0',
+314 silly addNameRange     '2.2.2',
+314 silly addNameRange     '2.2.3',
+314 silly addNameRange     '2.2.4',
+314 silly addNameRange     '2.2.5',
+314 silly addNameRange     '2.2.6',
+314 silly addNameRange     '2.2.7',
+314 silly addNameRange     '2.2.8',
+314 silly addNameRange     '2.2.9',
+314 silly addNameRange     '2.3.0',
+314 silly addNameRange     '2.5.0',
+314 silly addNameRange     '2.5.1',
+314 silly addNameRange     '2.5.2',
+314 silly addNameRange     '2.6.0',
+314 silly addNameRange     '3.0.0',
+314 silly addNameRange     '3.0.1',
+314 silly addNameRange     '3.0.2',
+314 silly addNameRange     '3.0.3',
+314 silly addNameRange     '3.0.4',
+314 silly addNameRange     '3.0.5',
+314 silly addNameRange     '3.1.1',
+314 silly addNameRange     '3.1.2',
+314 silly addNameRange     '3.1.3',
+314 silly addNameRange     '3.1.4',
+314 silly addNameRange     '3.1.5',
+314 silly addNameRange     '3.1.6',
+314 silly addNameRange     '3.2.0',
+314 silly addNameRange     '3.2.1',
+314 silly addNameRange     '3.2.2',
+314 silly addNameRange     '3.2.3',
+314 silly addNameRange     '3.2.4',
+314 silly addNameRange     '3.2.5',
+314 silly addNameRange     '3.3.0',
+314 silly addNameRange     '3.4.0',
+314 silly addNameRange     '3.5.0',
+314 silly addNameRange     '3.5.1',
+314 silly addNameRange     '3.6.0',
+314 silly addNameRange     '3.7.0',
+314 silly addNameRange     '3.7.1',
+314 silly addNameRange     '3.7.2',
+314 silly addNameRange     '3.7.3',
+314 silly addNameRange     '3.8.0',
+314 silly addNameRange     '3.8.1',
+314 silly addNameRange     '3.8.2',
+314 silly addNameRange     '3.8.3',
+314 silly addNameRange     '3.9.0' ] ]
+315 silly addNamed htmlparser2@3.8.3
+316 verbose addNamed "3.8.3" is a plain semver version for htmlparser2
+317 http 200 https://registry.npmjs.org/lodash
+318 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+318 verbose headers   etag: '"CP4JUN5HILX9SENM74UWH702C"',
+318 verbose headers   'content-type': 'application/json',
+318 verbose headers   'cache-control': 'max-age=300',
+318 verbose headers   'content-length': '110848',
+318 verbose headers   'accept-ranges': 'bytes',
+318 verbose headers   date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+318 verbose headers   via: '1.1 varnish',
+318 verbose headers   age: '25',
+318 verbose headers   connection: 'keep-alive',
+318 verbose headers   'x-served-by': 'cache-ams4145-AMS',
+318 verbose headers   'x-cache': 'HIT',
+318 verbose headers   'x-cache-hits': '3',
+318 verbose headers   'x-timer': 'S1454090847.492628,VS0,VE0',
+318 verbose headers   vary: 'Accept' }
+319 silly get cb [ 200,
+319 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+319 silly get     etag: '"CP4JUN5HILX9SENM74UWH702C"',
+319 silly get     'content-type': 'application/json',
+319 silly get     'cache-control': 'max-age=300',
+319 silly get     'content-length': '110848',
+319 silly get     'accept-ranges': 'bytes',
+319 silly get     date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+319 silly get     via: '1.1 varnish',
+319 silly get     age: '25',
+319 silly get     connection: 'keep-alive',
+319 silly get     'x-served-by': 'cache-ams4145-AMS',
+319 silly get     'x-cache': 'HIT',
+319 silly get     'x-cache-hits': '3',
+319 silly get     'x-timer': 'S1454090847.492628,VS0,VE0',
+319 silly get     vary: 'Accept' } ]
+320 verbose get saving lodash to /Users/iTurbo/.npm/registry.npmjs.org/lodash/.cache.json
+321 silly cache afterAdd htmlparser2@3.8.3
+322 verbose afterAdd /Users/iTurbo/.npm/htmlparser2/3.8.3/package/package.json not in flight; writing
+323 silly resolveWithNewModule lodash@3.7.0 checking installable status
+324 silly cache add args [ 'lodash@3.7.x', null ]
+325 verbose cache add spec lodash@3.7.x
+326 silly cache add parsed spec Result {
+326 silly cache add   raw: 'lodash@3.7.x',
+326 silly cache add   scope: null,
+326 silly cache add   name: 'lodash',
+326 silly cache add   rawSpec: '3.7.x',
+326 silly cache add   spec: '>=3.7.0 <3.8.0',
+326 silly cache add   type: 'range' }
+327 silly addNamed lodash@>=3.7.0 <3.8.0
+328 verbose addNamed ">=3.7.0 <3.8.0" is a valid semver range for lodash
+329 silly addNameRange { name: 'lodash', range: '>=3.7.0 <3.8.0', hasData: false }
+330 silly mapToRegistry name lodash
+331 silly mapToRegistry using default registry
+332 silly mapToRegistry registry https://registry.npmjs.org/
+333 silly mapToRegistry uri https://registry.npmjs.org/lodash
+334 verbose addNameRange registry:https://registry.npmjs.org/lodash not in flight; fetching
+335 verbose afterAdd /Users/iTurbo/.npm/htmlparser2/3.8.3/package/package.json written
+336 verbose get https://registry.npmjs.org/lodash not expired, no request
+337 silly addNameRange number 2 { name: 'lodash', range: '>=3.7.0 <3.8.0', hasData: true }
+338 silly addNameRange versions [ 'lodash',
+338 silly addNameRange   [ '0.1.0',
+338 silly addNameRange     '0.2.0',
+338 silly addNameRange     '0.2.1',
+338 silly addNameRange     '0.2.2',
+338 silly addNameRange     '0.3.0',
+338 silly addNameRange     '0.3.1',
+338 silly addNameRange     '0.3.2',
+338 silly addNameRange     '0.4.0',
+338 silly addNameRange     '0.4.1',
+338 silly addNameRange     '0.4.2',
+338 silly addNameRange     '0.5.0-rc.1',
+338 silly addNameRange     '0.5.0',
+338 silly addNameRange     '0.5.1',
+338 silly addNameRange     '0.5.2',
+338 silly addNameRange     '0.6.0',
+338 silly addNameRange     '0.6.1',
+338 silly addNameRange     '0.7.0',
+338 silly addNameRange     '0.8.0',
+338 silly addNameRange     '0.8.1',
+338 silly addNameRange     '0.8.2',
+338 silly addNameRange     '0.9.0',
+338 silly addNameRange     '0.9.1',
+338 silly addNameRange     '0.9.2',
+338 silly addNameRange     '0.10.0',
+338 silly addNameRange     '1.0.0-rc.1',
+338 silly addNameRange     '1.0.0-rc.2',
+338 silly addNameRange     '1.0.0-rc.3',
+338 silly addNameRange     '1.0.0',
+338 silly addNameRange     '1.0.1',
+338 silly addNameRange     '1.1.0',
+338 silly addNameRange     '1.1.1',
+338 silly addNameRange     '1.2.0',
+338 silly addNameRange     '1.2.1',
+338 silly addNameRange     '1.3.0',
+338 silly addNameRange     '1.3.1',
+338 silly addNameRange     '2.0.0',
+338 silly addNameRange     '2.1.0',
+338 silly addNameRange     '2.2.0',
+338 silly addNameRange     '2.2.1',
+338 silly addNameRange     '2.3.0',
+338 silly addNameRange     '2.4.0',
+338 silly addNameRange     '2.4.1',
+338 silly addNameRange     '3.0.0',
+338 silly addNameRange     '3.0.1',
+338 silly addNameRange     '3.1.0',
+338 silly addNameRange     '3.2.0',
+338 silly addNameRange     '3.3.0',
+338 silly addNameRange     '3.3.1',
+338 silly addNameRange     '3.4.0',
+338 silly addNameRange     '3.5.0',
+338 silly addNameRange     '3.6.0',
+338 silly addNameRange     '1.0.2',
+338 silly addNameRange     '3.7.0',
+338 silly addNameRange     '2.4.2',
+338 silly addNameRange     '3.8.0',
+338 silly addNameRange     '3.9.0',
+338 silly addNameRange     '3.9.1',
+338 silly addNameRange     '3.9.2',
+338 silly addNameRange     '3.9.3',
+338 silly addNameRange     '3.10.0',
+338 silly addNameRange     '3.10.1',
+338 silly addNameRange     '4.0.0',
+338 silly addNameRange     '4.0.1',
+338 silly addNameRange     '4.1.0' ] ]
+339 silly addNamed lodash@3.7.0
+340 verbose addNamed "3.7.0" is a plain semver version for lodash
+341 silly cache afterAdd lodash@3.7.0
+342 verbose afterAdd /Users/iTurbo/.npm/lodash/3.7.0/package/package.json not in flight; writing
+343 verbose afterAdd /Users/iTurbo/.npm/lodash/3.7.0/package/package.json written
+344 silly fetchNamedPackageData glob
+345 silly mapToRegistry name glob
+346 silly mapToRegistry using default registry
+347 silly mapToRegistry registry https://registry.npmjs.org/
+348 silly mapToRegistry uri https://registry.npmjs.org/glob
+349 verbose request uri https://registry.npmjs.org/glob
+350 verbose request no auth needed
+351 info attempt registry request try #1 at 7:07:27 PM
+352 verbose etag "35BW2PZITMBWTVHPL2Z8HULBB"
+353 http request GET https://registry.npmjs.org/glob
+354 http 200 https://registry.npmjs.org/glob
+355 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+355 verbose headers   etag: '"4ABWYEMK8X5KCW33RNOT2W36C"',
+355 verbose headers   'content-type': 'application/json',
+355 verbose headers   'cache-control': 'max-age=300',
+355 verbose headers   'content-length': '114276',
+355 verbose headers   'accept-ranges': 'bytes',
+355 verbose headers   date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+355 verbose headers   via: '1.1 varnish',
+355 verbose headers   age: '43',
+355 verbose headers   connection: 'keep-alive',
+355 verbose headers   'x-served-by': 'cache-ams4140-AMS',
+355 verbose headers   'x-cache': 'HIT',
+355 verbose headers   'x-cache-hits': '2',
+355 verbose headers   'x-timer': 'S1454090847.849153,VS0,VE0',
+355 verbose headers   vary: 'Accept' }
+356 silly get cb [ 200,
+356 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+356 silly get     etag: '"4ABWYEMK8X5KCW33RNOT2W36C"',
+356 silly get     'content-type': 'application/json',
+356 silly get     'cache-control': 'max-age=300',
+356 silly get     'content-length': '114276',
+356 silly get     'accept-ranges': 'bytes',
+356 silly get     date: 'Fri, 29 Jan 2016 18:07:27 GMT',
+356 silly get     via: '1.1 varnish',
+356 silly get     age: '43',
+356 silly get     connection: 'keep-alive',
+356 silly get     'x-served-by': 'cache-ams4140-AMS',
+356 silly get     'x-cache': 'HIT',
+356 silly get     'x-cache-hits': '2',
+356 silly get     'x-timer': 'S1454090847.849153,VS0,VE0',
+356 silly get     vary: 'Accept' } ]
+357 verbose get saving glob to /Users/iTurbo/.npm/registry.npmjs.org/glob/.cache.json
+358 silly resolveWithNewModule glob@3.2.11 checking installable status
+359 silly cache add args [ 'glob@~ 3.2.1', null ]
+360 verbose cache add spec glob@~ 3.2.1
+361 silly cache add parsed spec Result {
+361 silly cache add   raw: 'glob@~ 3.2.1',
+361 silly cache add   scope: null,
+361 silly cache add   name: 'glob',
+361 silly cache add   rawSpec: '~ 3.2.1',
+361 silly cache add   spec: '>=3.2.1 <3.3.0',
+361 silly cache add   type: 'range' }
+362 silly addNamed glob@>=3.2.1 <3.3.0
+363 verbose addNamed ">=3.2.1 <3.3.0" is a valid semver range for glob
+364 silly addNameRange { name: 'glob', range: '>=3.2.1 <3.3.0', hasData: false }
+365 silly mapToRegistry name glob
+366 silly mapToRegistry using default registry
+367 silly mapToRegistry registry https://registry.npmjs.org/
+368 silly mapToRegistry uri https://registry.npmjs.org/glob
+369 verbose addNameRange registry:https://registry.npmjs.org/glob not in flight; fetching
+370 verbose get https://registry.npmjs.org/glob not expired, no request
+371 silly addNameRange number 2 { name: 'glob', range: '>=3.2.1 <3.3.0', hasData: true }
+372 silly addNameRange versions [ 'glob',
+372 silly addNameRange   [ '1.1.0',
+372 silly addNameRange     '2.0.9',
+372 silly addNameRange     '2.0.8',
+372 silly addNameRange     '2.0.7',
+372 silly addNameRange     '2.1.0',
+372 silly addNameRange     '3.0.0',
+372 silly addNameRange     '3.0.1',
+372 silly addNameRange     '3.1.0',
+372 silly addNameRange     '3.1.1',
+372 silly addNameRange     '3.1.2',
+372 silly addNameRange     '3.1.3',
+372 silly addNameRange     '3.1.4',
+372 silly addNameRange     '3.1.5',
+372 silly addNameRange     '3.1.6',
+372 silly addNameRange     '3.1.7',
+372 silly addNameRange     '3.1.9',
+372 silly addNameRange     '3.1.10',
+372 silly addNameRange     '3.1.11',
+372 silly addNameRange     '3.1.12',
+372 silly addNameRange     '3.1.13',
+372 silly addNameRange     '3.1.14',
+372 silly addNameRange     '3.1.15',
+372 silly addNameRange     '3.1.16',
+372 silly addNameRange     '3.1.17',
+372 silly addNameRange     '3.1.18',
+372 silly addNameRange     '3.1.19',
+372 silly addNameRange     '3.1.20',
+372 silly addNameRange     '3.1.21',
+372 silly addNameRange     '3.2.0',
+372 silly addNameRange     '3.2.1',
+372 silly addNameRange     '3.2.3',
+372 silly addNameRange     '3.2.4',
+372 silly addNameRange     '3.2.5',
+372 silly addNameRange     '3.2.6',
+372 silly addNameRange     '3.2.7',
+372 silly addNameRange     '3.2.8',
+372 silly addNameRange     '3.2.9',
+372 silly addNameRange     '3.2.10',
+372 silly addNameRange     '3.2.11',
+372 silly addNameRange     '4.0.0',
+372 silly addNameRange     '4.0.1',
+372 silly addNameRange     '4.0.2',
+372 silly addNameRange     '4.0.3',
+372 silly addNameRange     '4.0.4',
+372 silly addNameRange     '4.0.5',
+372 silly addNameRange     '4.0.6',
+372 silly addNameRange     '4.1.2-beta',
+372 silly addNameRange     '4.1.2',
+372 silly addNameRange     '4.1.3',
+372 silly addNameRange     '4.1.4',
+372 silly addNameRange     '4.1.5',
+372 silly addNameRange     '4.1.6',
+372 silly addNameRange     '4.2.0',
+372 silly addNameRange     '4.2.1',
+372 silly addNameRange     '4.2.2',
+372 silly addNameRange     '4.3.0',
+372 silly addNameRange     '4.3.1',
+372 silly addNameRange     '4.3.2',
+372 silly addNameRange     '4.3.3',
+372 silly addNameRange     '4.3.4',
+372 silly addNameRange     '4.3.5',
+372 silly addNameRange     '4.4.0',
+372 silly addNameRange     '4.4.2',
+372 silly addNameRange     '4.5.0',
+372 silly addNameRange     '5.0.0',
+372 silly addNameRange     '4.5.1',
+372 silly addNameRange     '5.0.1',
+372 silly addNameRange     '4.5.2',
+372 silly addNameRange     '5.0.2',
+372 silly addNameRange     '4.5.3',
+372 silly addNameRange     '5.0.3',
+372 silly addNameRange     '5.0.4',
+372 silly addNameRange     '5.0.5',
+372 silly addNameRange     '5.0.6',
+372 silly addNameRange     '5.0.7',
+372 silly addNameRange     '5.0.9',
+372 silly addNameRange     '5.0.10',
+372 silly addNameRange     '5.0.11',
+372 silly addNameRange     '5.0.12',
+372 silly addNameRange     '5.0.13',
+372 silly addNameRange     '5.0.14',
+372 silly addNameRange     '5.0.15',
+372 silly addNameRange     '6.0.1',
+372 silly addNameRange     '6.0.2',
+372 silly addNameRange     '6.0.3',
+372 silly addNameRange     '6.0.4' ] ]
+373 silly addNamed glob@3.2.11
+374 verbose addNamed "3.2.11" is a plain semver version for glob
+375 silly cache afterAdd glob@3.2.11
+376 verbose afterAdd /Users/iTurbo/.npm/glob/3.2.11/package/package.json not in flight; writing
+377 verbose afterAdd /Users/iTurbo/.npm/glob/3.2.11/package/package.json written
+378 silly fetchNamedPackageData inherits
+379 silly mapToRegistry name inherits
+380 silly mapToRegistry using default registry
+381 silly mapToRegistry registry https://registry.npmjs.org/
+382 silly mapToRegistry uri https://registry.npmjs.org/inherits
+383 silly fetchNamedPackageData minimatch
+384 silly mapToRegistry name minimatch
+385 silly mapToRegistry using default registry
+386 silly mapToRegistry registry https://registry.npmjs.org/
+387 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+388 silly resolveWithNewModule minimatch@0.3.0 checking installable status
+389 silly cache add args [ 'minimatch@0.3', null ]
+390 verbose cache add spec minimatch@0.3
+391 silly cache add parsed spec Result {
+391 silly cache add   raw: 'minimatch@0.3',
+391 silly cache add   scope: null,
+391 silly cache add   name: 'minimatch',
+391 silly cache add   rawSpec: '0.3',
+391 silly cache add   spec: '>=0.3.0 <0.4.0',
+391 silly cache add   type: 'range' }
+392 silly addNamed minimatch@>=0.3.0 <0.4.0
+393 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for minimatch
+394 silly addNameRange { name: 'minimatch', range: '>=0.3.0 <0.4.0', hasData: false }
+395 silly mapToRegistry name minimatch
+396 silly mapToRegistry using default registry
+397 silly mapToRegistry registry https://registry.npmjs.org/
+398 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+399 verbose addNameRange registry:https://registry.npmjs.org/minimatch not in flight; fetching
+400 verbose get https://registry.npmjs.org/minimatch not expired, no request
+401 silly addNameRange number 2 { name: 'minimatch', range: '>=0.3.0 <0.4.0', hasData: true }
+402 silly addNameRange versions [ 'minimatch',
+402 silly addNameRange   [ '0.0.1',
+402 silly addNameRange     '0.0.2',
+402 silly addNameRange     '0.0.4',
+402 silly addNameRange     '0.0.5',
+402 silly addNameRange     '0.1.1',
+402 silly addNameRange     '0.1.2',
+402 silly addNameRange     '0.1.3',
+402 silly addNameRange     '0.1.4',
+402 silly addNameRange     '0.1.5',
+402 silly addNameRange     '0.2.0',
+402 silly addNameRange     '0.2.2',
+402 silly addNameRange     '0.2.3',
+402 silly addNameRange     '0.2.4',
+402 silly addNameRange     '0.2.5',
+402 silly addNameRange     '0.2.6',
+402 silly addNameRange     '0.2.7',
+402 silly addNameRange     '0.2.8',
+402 silly addNameRange     '0.2.9',
+402 silly addNameRange     '0.2.10',
+402 silly addNameRange     '0.2.11',
+402 silly addNameRange     '0.2.12',
+402 silly addNameRange     '0.2.13',
+402 silly addNameRange     '0.2.14',
+402 silly addNameRange     '0.3.0',
+402 silly addNameRange     '0.4.0',
+402 silly addNameRange     '1.0.0',
+402 silly addNameRange     '2.0.0',
+402 silly addNameRange     '2.0.1',
+402 silly addNameRange     '2.0.2',
+402 silly addNameRange     '2.0.3',
+402 silly addNameRange     '2.0.4',
+402 silly addNameRange     '2.0.5',
+402 silly addNameRange     '2.0.6',
+402 silly addNameRange     '2.0.7',
+402 silly addNameRange     '2.0.8',
+402 silly addNameRange     '2.0.9',
+402 silly addNameRange     '2.0.10',
+402 silly addNameRange     '3.0.0' ] ]
+403 silly addNamed minimatch@0.3.0
+404 verbose addNamed "0.3.0" is a plain semver version for minimatch
+405 verbose request uri https://registry.npmjs.org/inherits
+406 verbose request no auth needed
+407 info attempt registry request try #1 at 7:07:28 PM
+408 verbose etag "CKJX1OCRDNX2UW7IZR6DX5BIN"
+409 http request GET https://registry.npmjs.org/inherits
+410 silly cache afterAdd minimatch@0.3.0
+411 verbose afterAdd /Users/iTurbo/.npm/minimatch/0.3.0/package/package.json not in flight; writing
+412 verbose afterAdd /Users/iTurbo/.npm/minimatch/0.3.0/package/package.json written
+413 http 200 https://registry.npmjs.org/inherits
+414 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+414 verbose headers   etag: '"6K5QFLUTXPME0NV1TFDRFLKIL"',
+414 verbose headers   'content-type': 'application/json',
+414 verbose headers   'cache-control': 'max-age=300',
+414 verbose headers   'content-length': '7223',
+414 verbose headers   'accept-ranges': 'bytes',
+414 verbose headers   date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+414 verbose headers   via: '1.1 varnish',
+414 verbose headers   age: '175',
+414 verbose headers   connection: 'keep-alive',
+414 verbose headers   'x-served-by': 'cache-ams4138-AMS',
+414 verbose headers   'x-cache': 'HIT',
+414 verbose headers   'x-cache-hits': '17',
+414 verbose headers   'x-timer': 'S1454090848.204067,VS0,VE0',
+414 verbose headers   vary: 'Accept' }
+415 silly get cb [ 200,
+415 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+415 silly get     etag: '"6K5QFLUTXPME0NV1TFDRFLKIL"',
+415 silly get     'content-type': 'application/json',
+415 silly get     'cache-control': 'max-age=300',
+415 silly get     'content-length': '7223',
+415 silly get     'accept-ranges': 'bytes',
+415 silly get     date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+415 silly get     via: '1.1 varnish',
+415 silly get     age: '175',
+415 silly get     connection: 'keep-alive',
+415 silly get     'x-served-by': 'cache-ams4138-AMS',
+415 silly get     'x-cache': 'HIT',
+415 silly get     'x-cache-hits': '17',
+415 silly get     'x-timer': 'S1454090848.204067,VS0,VE0',
+415 silly get     vary: 'Accept' } ]
+416 verbose get saving inherits to /Users/iTurbo/.npm/registry.npmjs.org/inherits/.cache.json
+417 silly resolveWithNewModule inherits@2.0.1 checking installable status
+418 silly cache add args [ 'inherits@2', null ]
+419 verbose cache add spec inherits@2
+420 silly cache add parsed spec Result {
+420 silly cache add   raw: 'inherits@2',
+420 silly cache add   scope: null,
+420 silly cache add   name: 'inherits',
+420 silly cache add   rawSpec: '2',
+420 silly cache add   spec: '>=2.0.0 <3.0.0',
+420 silly cache add   type: 'range' }
+421 silly addNamed inherits@>=2.0.0 <3.0.0
+422 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for inherits
+423 silly addNameRange { name: 'inherits', range: '>=2.0.0 <3.0.0', hasData: false }
+424 silly mapToRegistry name inherits
+425 silly mapToRegistry using default registry
+426 silly mapToRegistry registry https://registry.npmjs.org/
+427 silly mapToRegistry uri https://registry.npmjs.org/inherits
+428 verbose addNameRange registry:https://registry.npmjs.org/inherits not in flight; fetching
+429 verbose get https://registry.npmjs.org/inherits not expired, no request
+430 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.0 <3.0.0', hasData: true }
+431 silly addNameRange versions [ 'inherits', [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2' ] ]
+432 silly addNamed inherits@2.0.1
+433 verbose addNamed "2.0.1" is a plain semver version for inherits
+434 silly cache afterAdd inherits@2.0.1
+435 verbose afterAdd /Users/iTurbo/.npm/inherits/2.0.1/package/package.json not in flight; writing
+436 verbose afterAdd /Users/iTurbo/.npm/inherits/2.0.1/package/package.json written
+437 silly fetchNamedPackageData lru-cache
+438 silly mapToRegistry name lru-cache
+439 silly mapToRegistry using default registry
+440 silly mapToRegistry registry https://registry.npmjs.org/
+441 silly mapToRegistry uri https://registry.npmjs.org/lru-cache
+442 silly fetchNamedPackageData sigmund
+443 silly mapToRegistry name sigmund
+444 silly mapToRegistry using default registry
+445 silly mapToRegistry registry https://registry.npmjs.org/
+446 silly mapToRegistry uri https://registry.npmjs.org/sigmund
+447 verbose request uri https://registry.npmjs.org/lru-cache
+448 verbose request no auth needed
+449 info attempt registry request try #1 at 7:07:28 PM
+450 verbose etag "A612E1QU1KQ8FT5B9WOERJD2K"
+451 http request GET https://registry.npmjs.org/lru-cache
+452 verbose request uri https://registry.npmjs.org/sigmund
+453 verbose request no auth needed
+454 info attempt registry request try #1 at 7:07:28 PM
+455 verbose etag "1TUX00X8YEKNFED6GGWS214S3"
+456 http request GET https://registry.npmjs.org/sigmund
+457 http 304 https://registry.npmjs.org/sigmund
+458 verbose headers { date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+458 verbose headers   via: '1.1 varnish',
+458 verbose headers   'cache-control': 'max-age=300',
+458 verbose headers   etag: '"1TUX00X8YEKNFED6GGWS214S3"',
+458 verbose headers   age: '15',
+458 verbose headers   connection: 'keep-alive',
+458 verbose headers   'x-served-by': 'cache-ams4132-AMS',
+458 verbose headers   'x-cache': 'HIT',
+458 verbose headers   'x-cache-hits': '2',
+458 verbose headers   'x-timer': 'S1454090848.345789,VS0,VE0',
+458 verbose headers   vary: 'Accept' }
+459 silly get cb [ 304,
+459 silly get   { date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+459 silly get     via: '1.1 varnish',
+459 silly get     'cache-control': 'max-age=300',
+459 silly get     etag: '"1TUX00X8YEKNFED6GGWS214S3"',
+459 silly get     age: '15',
+459 silly get     connection: 'keep-alive',
+459 silly get     'x-served-by': 'cache-ams4132-AMS',
+459 silly get     'x-cache': 'HIT',
+459 silly get     'x-cache-hits': '2',
+459 silly get     'x-timer': 'S1454090848.345789,VS0,VE0',
+459 silly get     vary: 'Accept' } ]
+460 verbose etag https://registry.npmjs.org/sigmund from cache
+461 verbose get saving sigmund to /Users/iTurbo/.npm/registry.npmjs.org/sigmund/.cache.json
+462 silly resolveWithNewModule sigmund@1.0.1 checking installable status
+463 silly cache add args [ 'sigmund@~1.0.0', null ]
+464 verbose cache add spec sigmund@~1.0.0
+465 silly cache add parsed spec Result {
+465 silly cache add   raw: 'sigmund@~1.0.0',
+465 silly cache add   scope: null,
+465 silly cache add   name: 'sigmund',
+465 silly cache add   rawSpec: '~1.0.0',
+465 silly cache add   spec: '>=1.0.0 <1.1.0',
+465 silly cache add   type: 'range' }
+466 silly addNamed sigmund@>=1.0.0 <1.1.0
+467 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for sigmund
+468 silly addNameRange { name: 'sigmund', range: '>=1.0.0 <1.1.0', hasData: false }
+469 silly mapToRegistry name sigmund
+470 silly mapToRegistry using default registry
+471 silly mapToRegistry registry https://registry.npmjs.org/
+472 silly mapToRegistry uri https://registry.npmjs.org/sigmund
+473 verbose addNameRange registry:https://registry.npmjs.org/sigmund not in flight; fetching
+474 verbose get https://registry.npmjs.org/sigmund not expired, no request
+475 silly addNameRange number 2 { name: 'sigmund', range: '>=1.0.0 <1.1.0', hasData: true }
+476 silly addNameRange versions [ 'sigmund', [ '1.0.0', '1.0.1' ] ]
+477 silly addNamed sigmund@1.0.1
+478 verbose addNamed "1.0.1" is a plain semver version for sigmund
+479 silly cache afterAdd sigmund@1.0.1
+480 verbose afterAdd /Users/iTurbo/.npm/sigmund/1.0.1/package/package.json not in flight; writing
+481 verbose afterAdd /Users/iTurbo/.npm/sigmund/1.0.1/package/package.json written
+482 http 200 https://registry.npmjs.org/lru-cache
+483 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+483 verbose headers   etag: '"7CI0NKK8QZ7JAGBNVAHHLOEKD"',
+483 verbose headers   'content-type': 'application/json',
+483 verbose headers   'cache-control': 'max-age=300',
+483 verbose headers   'content-length': '48086',
+483 verbose headers   'accept-ranges': 'bytes',
+483 verbose headers   date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+483 verbose headers   via: '1.1 varnish',
+483 verbose headers   age: '175',
+483 verbose headers   connection: 'keep-alive',
+483 verbose headers   'x-served-by': 'cache-ams4140-AMS',
+483 verbose headers   'x-cache': 'HIT',
+483 verbose headers   'x-cache-hits': '2',
+483 verbose headers   'x-timer': 'S1454090848.357690,VS0,VE0',
+483 verbose headers   vary: 'Accept' }
+484 silly get cb [ 200,
+484 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+484 silly get     etag: '"7CI0NKK8QZ7JAGBNVAHHLOEKD"',
+484 silly get     'content-type': 'application/json',
+484 silly get     'cache-control': 'max-age=300',
+484 silly get     'content-length': '48086',
+484 silly get     'accept-ranges': 'bytes',
+484 silly get     date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+484 silly get     via: '1.1 varnish',
+484 silly get     age: '175',
+484 silly get     connection: 'keep-alive',
+484 silly get     'x-served-by': 'cache-ams4140-AMS',
+484 silly get     'x-cache': 'HIT',
+484 silly get     'x-cache-hits': '2',
+484 silly get     'x-timer': 'S1454090848.357690,VS0,VE0',
+484 silly get     vary: 'Accept' } ]
+485 verbose get saving lru-cache to /Users/iTurbo/.npm/registry.npmjs.org/lru-cache/.cache.json
+486 silly resolveWithNewModule lru-cache@2.7.3 checking installable status
+487 silly cache add args [ 'lru-cache@2', null ]
+488 verbose cache add spec lru-cache@2
+489 silly cache add parsed spec Result {
+489 silly cache add   raw: 'lru-cache@2',
+489 silly cache add   scope: null,
+489 silly cache add   name: 'lru-cache',
+489 silly cache add   rawSpec: '2',
+489 silly cache add   spec: '>=2.0.0 <3.0.0',
+489 silly cache add   type: 'range' }
+490 silly addNamed lru-cache@>=2.0.0 <3.0.0
+491 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for lru-cache
+492 silly addNameRange { name: 'lru-cache', range: '>=2.0.0 <3.0.0', hasData: false }
+493 silly mapToRegistry name lru-cache
+494 silly mapToRegistry using default registry
+495 silly mapToRegistry registry https://registry.npmjs.org/
+496 silly mapToRegistry uri https://registry.npmjs.org/lru-cache
+497 verbose addNameRange registry:https://registry.npmjs.org/lru-cache not in flight; fetching
+498 verbose get https://registry.npmjs.org/lru-cache not expired, no request
+499 silly addNameRange number 2 { name: 'lru-cache', range: '>=2.0.0 <3.0.0', hasData: true }
+500 silly addNameRange versions [ 'lru-cache',
+500 silly addNameRange   [ '1.0.1',
+500 silly addNameRange     '1.0.2',
+500 silly addNameRange     '1.0.3',
+500 silly addNameRange     '1.0.4',
+500 silly addNameRange     '1.0.5',
+500 silly addNameRange     '1.0.6',
+500 silly addNameRange     '1.1.0',
+500 silly addNameRange     '1.1.1',
+500 silly addNameRange     '2.0.0',
+500 silly addNameRange     '2.0.1',
+500 silly addNameRange     '2.0.2',
+500 silly addNameRange     '2.0.3',
+500 silly addNameRange     '2.0.4',
+500 silly addNameRange     '2.1.0',
+500 silly addNameRange     '2.2.0',
+500 silly addNameRange     '2.2.1',
+500 silly addNameRange     '2.2.2',
+500 silly addNameRange     '2.2.4',
+500 silly addNameRange     '2.3.0',
+500 silly addNameRange     '2.3.1',
+500 silly addNameRange     '2.5.0',
+500 silly addNameRange     '2.5.1',
+500 silly addNameRange     '2.5.2',
+500 silly addNameRange     '2.6.0',
+500 silly addNameRange     '2.6.1',
+500 silly addNameRange     '2.6.2',
+500 silly addNameRange     '2.6.3',
+500 silly addNameRange     '2.6.4',
+500 silly addNameRange     '2.6.5',
+500 silly addNameRange     '2.7.0',
+500 silly addNameRange     '2.7.1',
+500 silly addNameRange     '2.7.2',
+500 silly addNameRange     '2.7.3',
+500 silly addNameRange     '3.0.0',
+500 silly addNameRange     '3.1.0',
+500 silly addNameRange     '3.1.1',
+500 silly addNameRange     '3.1.2',
+500 silly addNameRange     '3.2.0',
+500 silly addNameRange     '4.0.0' ] ]
+501 silly addNamed lru-cache@2.7.3
+502 verbose addNamed "2.7.3" is a plain semver version for lru-cache
+503 silly cache afterAdd lru-cache@2.7.3
+504 verbose afterAdd /Users/iTurbo/.npm/lru-cache/2.7.3/package/package.json not in flight; writing
+505 verbose afterAdd /Users/iTurbo/.npm/lru-cache/2.7.3/package/package.json written
+506 silly fetchNamedPackageData date-now
+507 silly mapToRegistry name date-now
+508 silly mapToRegistry using default registry
+509 silly mapToRegistry registry https://registry.npmjs.org/
+510 silly mapToRegistry uri https://registry.npmjs.org/date-now
+511 verbose request uri https://registry.npmjs.org/date-now
+512 verbose request no auth needed
+513 info attempt registry request try #1 at 7:07:28 PM
+514 verbose etag "4IVDPT1USQTTDVL345B8VOWJW"
+515 http request GET https://registry.npmjs.org/date-now
+516 http 304 https://registry.npmjs.org/date-now
+517 verbose headers { date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+517 verbose headers   via: '1.1 varnish',
+517 verbose headers   'cache-control': 'max-age=300',
+517 verbose headers   etag: '"4IVDPT1USQTTDVL345B8VOWJW"',
+517 verbose headers   age: '116',
+517 verbose headers   connection: 'keep-alive',
+517 verbose headers   'x-served-by': 'cache-ams4126-AMS',
+517 verbose headers   'x-cache': 'HIT',
+517 verbose headers   'x-cache-hits': '1',
+517 verbose headers   'x-timer': 'S1454090848.630005,VS0,VE0',
+517 verbose headers   vary: 'Accept' }
+518 silly get cb [ 304,
+518 silly get   { date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+518 silly get     via: '1.1 varnish',
+518 silly get     'cache-control': 'max-age=300',
+518 silly get     etag: '"4IVDPT1USQTTDVL345B8VOWJW"',
+518 silly get     age: '116',
+518 silly get     connection: 'keep-alive',
+518 silly get     'x-served-by': 'cache-ams4126-AMS',
+518 silly get     'x-cache': 'HIT',
+518 silly get     'x-cache-hits': '1',
+518 silly get     'x-timer': 'S1454090848.630005,VS0,VE0',
+518 silly get     vary: 'Accept' } ]
+519 verbose etag https://registry.npmjs.org/date-now from cache
+520 verbose get saving date-now to /Users/iTurbo/.npm/registry.npmjs.org/date-now/.cache.json
+521 silly resolveWithNewModule date-now@0.1.4 checking installable status
+522 silly cache add args [ 'date-now@^0.1.4', null ]
+523 verbose cache add spec date-now@^0.1.4
+524 silly cache add parsed spec Result {
+524 silly cache add   raw: 'date-now@^0.1.4',
+524 silly cache add   scope: null,
+524 silly cache add   name: 'date-now',
+524 silly cache add   rawSpec: '^0.1.4',
+524 silly cache add   spec: '>=0.1.4 <0.2.0',
+524 silly cache add   type: 'range' }
+525 silly addNamed date-now@>=0.1.4 <0.2.0
+526 verbose addNamed ">=0.1.4 <0.2.0" is a valid semver range for date-now
+527 silly addNameRange { name: 'date-now', range: '>=0.1.4 <0.2.0', hasData: false }
+528 silly mapToRegistry name date-now
+529 silly mapToRegistry using default registry
+530 silly mapToRegistry registry https://registry.npmjs.org/
+531 silly mapToRegistry uri https://registry.npmjs.org/date-now
+532 verbose addNameRange registry:https://registry.npmjs.org/date-now not in flight; fetching
+533 verbose get https://registry.npmjs.org/date-now not expired, no request
+534 silly addNameRange number 2 { name: 'date-now', range: '>=0.1.4 <0.2.0', hasData: true }
+535 silly addNameRange versions [ 'date-now',
+535 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.3', '0.1.2', '0.1.4', '1.0.0', '1.0.1' ] ]
+536 silly addNamed date-now@0.1.4
+537 verbose addNamed "0.1.4" is a plain semver version for date-now
+538 silly cache afterAdd date-now@0.1.4
+539 verbose afterAdd /Users/iTurbo/.npm/date-now/0.1.4/package/package.json not in flight; writing
+540 verbose afterAdd /Users/iTurbo/.npm/date-now/0.1.4/package/package.json written
+541 silly fetchNamedPackageData domhandler
+542 silly mapToRegistry name domhandler
+543 silly mapToRegistry using default registry
+544 silly mapToRegistry registry https://registry.npmjs.org/
+545 silly mapToRegistry uri https://registry.npmjs.org/domhandler
+546 silly fetchNamedPackageData domutils
+547 silly mapToRegistry name domutils
+548 silly mapToRegistry using default registry
+549 silly mapToRegistry registry https://registry.npmjs.org/
+550 silly mapToRegistry uri https://registry.npmjs.org/domutils
+551 silly fetchNamedPackageData domelementtype
+552 silly mapToRegistry name domelementtype
+553 silly mapToRegistry using default registry
+554 silly mapToRegistry registry https://registry.npmjs.org/
+555 silly mapToRegistry uri https://registry.npmjs.org/domelementtype
+556 silly fetchNamedPackageData readable-stream
+557 silly mapToRegistry name readable-stream
+558 silly mapToRegistry using default registry
+559 silly mapToRegistry registry https://registry.npmjs.org/
+560 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+561 silly fetchNamedPackageData entities
+562 silly mapToRegistry name entities
+563 silly mapToRegistry using default registry
+564 silly mapToRegistry registry https://registry.npmjs.org/
+565 silly mapToRegistry uri https://registry.npmjs.org/entities
+566 verbose request uri https://registry.npmjs.org/domhandler
+567 verbose request no auth needed
+568 info attempt registry request try #1 at 7:07:28 PM
+569 verbose etag "A3OOX9EJC4NKPJUQLQ26WPPTB"
+570 http request GET https://registry.npmjs.org/domhandler
+571 verbose request uri https://registry.npmjs.org/domelementtype
+572 verbose request no auth needed
+573 info attempt registry request try #1 at 7:07:28 PM
+574 verbose etag "4W2849LOGQQ1FMDQHW6E59VF1"
+575 http request GET https://registry.npmjs.org/domelementtype
+576 verbose request uri https://registry.npmjs.org/domutils
+577 verbose request no auth needed
+578 info attempt registry request try #1 at 7:07:28 PM
+579 verbose etag "DEDBJTHGW9Y0ZH23SCVHKGJ3Y"
+580 http request GET https://registry.npmjs.org/domutils
+581 verbose request uri https://registry.npmjs.org/readable-stream
+582 verbose request no auth needed
+583 info attempt registry request try #1 at 7:07:28 PM
+584 verbose etag "3EOIL5JTL47JFABLY3LGTYV7"
+585 http request GET https://registry.npmjs.org/readable-stream
+586 verbose request uri https://registry.npmjs.org/entities
+587 verbose request no auth needed
+588 info attempt registry request try #1 at 7:07:28 PM
+589 verbose etag "1LHTRFVAP1BH3O9OM1LAEN256"
+590 http request GET https://registry.npmjs.org/entities
+591 http 304 https://registry.npmjs.org/domelementtype
+592 verbose headers { date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+592 verbose headers   via: '1.1 varnish',
+592 verbose headers   'cache-control': 'max-age=60',
+592 verbose headers   etag: '"4W2849LOGQQ1FMDQHW6E59VF1"',
+592 verbose headers   age: '59',
+592 verbose headers   connection: 'keep-alive',
+592 verbose headers   'x-served-by': 'cache-ams4135-AMS',
+592 verbose headers   'x-cache': 'HIT',
+592 verbose headers   'x-cache-hits': '2',
+592 verbose headers   'x-timer': 'S1454090848.808734,VS0,VE0',
+592 verbose headers   vary: 'Accept' }
+593 silly get cb [ 304,
+593 silly get   { date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+593 silly get     via: '1.1 varnish',
+593 silly get     'cache-control': 'max-age=60',
+593 silly get     etag: '"4W2849LOGQQ1FMDQHW6E59VF1"',
+593 silly get     age: '59',
+593 silly get     connection: 'keep-alive',
+593 silly get     'x-served-by': 'cache-ams4135-AMS',
+593 silly get     'x-cache': 'HIT',
+593 silly get     'x-cache-hits': '2',
+593 silly get     'x-timer': 'S1454090848.808734,VS0,VE0',
+593 silly get     vary: 'Accept' } ]
+594 verbose etag https://registry.npmjs.org/domelementtype from cache
+595 verbose get saving domelementtype to /Users/iTurbo/.npm/registry.npmjs.org/domelementtype/.cache.json
+596 silly resolveWithNewModule domelementtype@1.3.0 checking installable status
+597 silly cache add args [ 'domelementtype@1', null ]
+598 verbose cache add spec domelementtype@1
+599 silly cache add parsed spec Result {
+599 silly cache add   raw: 'domelementtype@1',
+599 silly cache add   scope: null,
+599 silly cache add   name: 'domelementtype',
+599 silly cache add   rawSpec: '1',
+599 silly cache add   spec: '>=1.0.0 <2.0.0',
+599 silly cache add   type: 'range' }
+600 silly addNamed domelementtype@>=1.0.0 <2.0.0
+601 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for domelementtype
+602 silly addNameRange { name: 'domelementtype',
+602 silly addNameRange   range: '>=1.0.0 <2.0.0',
+602 silly addNameRange   hasData: false }
+603 silly mapToRegistry name domelementtype
+604 silly mapToRegistry using default registry
+605 silly mapToRegistry registry https://registry.npmjs.org/
+606 silly mapToRegistry uri https://registry.npmjs.org/domelementtype
+607 verbose addNameRange registry:https://registry.npmjs.org/domelementtype not in flight; fetching
+608 verbose get https://registry.npmjs.org/domelementtype not expired, no request
+609 silly addNameRange number 2 { name: 'domelementtype',
+609 silly addNameRange   range: '>=1.0.0 <2.0.0',
+609 silly addNameRange   hasData: true }
+610 silly addNameRange versions [ 'domelementtype',
+610 silly addNameRange   [ '1.0.0',
+610 silly addNameRange     '1.0.1',
+610 silly addNameRange     '1.1.0',
+610 silly addNameRange     '1.1.1',
+610 silly addNameRange     '1.1.2',
+610 silly addNameRange     '1.1.3',
+610 silly addNameRange     '1.2.0',
+610 silly addNameRange     '1.3.0' ] ]
+611 silly addNamed domelementtype@1.3.0
+612 verbose addNamed "1.3.0" is a plain semver version for domelementtype
+613 http 304 https://registry.npmjs.org/domhandler
+614 verbose headers { date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+614 verbose headers   via: '1.1 varnish',
+614 verbose headers   'cache-control': 'max-age=60',
+614 verbose headers   etag: '"A3OOX9EJC4NKPJUQLQ26WPPTB"',
+614 verbose headers   age: '59',
+614 verbose headers   connection: 'keep-alive',
+614 verbose headers   'x-served-by': 'cache-ams4125-AMS',
+614 verbose headers   'x-cache': 'HIT',
+614 verbose headers   'x-cache-hits': '540',
+614 verbose headers   'x-timer': 'S1454090848.808949,VS0,VE0',
+614 verbose headers   vary: 'Accept' }
+615 silly get cb [ 304,
+615 silly get   { date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+615 silly get     via: '1.1 varnish',
+615 silly get     'cache-control': 'max-age=60',
+615 silly get     etag: '"A3OOX9EJC4NKPJUQLQ26WPPTB"',
+615 silly get     age: '59',
+615 silly get     connection: 'keep-alive',
+615 silly get     'x-served-by': 'cache-ams4125-AMS',
+615 silly get     'x-cache': 'HIT',
+615 silly get     'x-cache-hits': '540',
+615 silly get     'x-timer': 'S1454090848.808949,VS0,VE0',
+615 silly get     vary: 'Accept' } ]
+616 verbose etag https://registry.npmjs.org/domhandler from cache
+617 verbose get saving domhandler to /Users/iTurbo/.npm/registry.npmjs.org/domhandler/.cache.json
+618 silly cache afterAdd domelementtype@1.3.0
+619 verbose afterAdd /Users/iTurbo/.npm/domelementtype/1.3.0/package/package.json not in flight; writing
+620 http 304 https://registry.npmjs.org/domutils
+621 verbose headers { date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+621 verbose headers   via: '1.1 varnish',
+621 verbose headers   'cache-control': 'max-age=60',
+621 verbose headers   etag: '"DEDBJTHGW9Y0ZH23SCVHKGJ3Y"',
+621 verbose headers   age: '47',
+621 verbose headers   connection: 'keep-alive',
+621 verbose headers   'x-served-by': 'cache-ams4137-AMS',
+621 verbose headers   'x-cache': 'HIT',
+621 verbose headers   'x-cache-hits': '2',
+621 verbose headers   'x-timer': 'S1454090848.809434,VS0,VE0',
+621 verbose headers   vary: 'Accept' }
+622 silly get cb [ 304,
+622 silly get   { date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+622 silly get     via: '1.1 varnish',
+622 silly get     'cache-control': 'max-age=60',
+622 silly get     etag: '"DEDBJTHGW9Y0ZH23SCVHKGJ3Y"',
+622 silly get     age: '47',
+622 silly get     connection: 'keep-alive',
+622 silly get     'x-served-by': 'cache-ams4137-AMS',
+622 silly get     'x-cache': 'HIT',
+622 silly get     'x-cache-hits': '2',
+622 silly get     'x-timer': 'S1454090848.809434,VS0,VE0',
+622 silly get     vary: 'Accept' } ]
+623 verbose etag https://registry.npmjs.org/domutils from cache
+624 verbose get saving domutils to /Users/iTurbo/.npm/registry.npmjs.org/domutils/.cache.json
+625 http 304 https://registry.npmjs.org/readable-stream
+626 verbose headers { date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+626 verbose headers   via: '1.1 varnish',
+626 verbose headers   'cache-control': 'max-age=300',
+626 verbose headers   etag: '"3EOIL5JTL47JFABLY3LGTYV7"',
+626 verbose headers   age: '102',
+626 verbose headers   connection: 'keep-alive',
+626 verbose headers   'x-served-by': 'cache-ams4121-AMS',
+626 verbose headers   'x-cache': 'HIT',
+626 verbose headers   'x-cache-hits': '5',
+626 verbose headers   'x-timer': 'S1454090848.813943,VS0,VE0',
+626 verbose headers   vary: 'Accept' }
+627 silly get cb [ 304,
+627 silly get   { date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+627 silly get     via: '1.1 varnish',
+627 silly get     'cache-control': 'max-age=300',
+627 silly get     etag: '"3EOIL5JTL47JFABLY3LGTYV7"',
+627 silly get     age: '102',
+627 silly get     connection: 'keep-alive',
+627 silly get     'x-served-by': 'cache-ams4121-AMS',
+627 silly get     'x-cache': 'HIT',
+627 silly get     'x-cache-hits': '5',
+627 silly get     'x-timer': 'S1454090848.813943,VS0,VE0',
+627 silly get     vary: 'Accept' } ]
+628 verbose etag https://registry.npmjs.org/readable-stream from cache
+629 verbose get saving readable-stream to /Users/iTurbo/.npm/registry.npmjs.org/readable-stream/.cache.json
+630 verbose afterAdd /Users/iTurbo/.npm/domelementtype/1.3.0/package/package.json written
+631 silly resolveWithNewModule domhandler@2.3.0 checking installable status
+632 silly cache add args [ 'domhandler@2.3', null ]
+633 verbose cache add spec domhandler@2.3
+634 silly cache add parsed spec Result {
+634 silly cache add   raw: 'domhandler@2.3',
+634 silly cache add   scope: null,
+634 silly cache add   name: 'domhandler',
+634 silly cache add   rawSpec: '2.3',
+634 silly cache add   spec: '>=2.3.0 <2.4.0',
+634 silly cache add   type: 'range' }
+635 silly addNamed domhandler@>=2.3.0 <2.4.0
+636 verbose addNamed ">=2.3.0 <2.4.0" is a valid semver range for domhandler
+637 silly addNameRange { name: 'domhandler', range: '>=2.3.0 <2.4.0', hasData: false }
+638 silly mapToRegistry name domhandler
+639 silly mapToRegistry using default registry
+640 silly mapToRegistry registry https://registry.npmjs.org/
+641 silly mapToRegistry uri https://registry.npmjs.org/domhandler
+642 verbose addNameRange registry:https://registry.npmjs.org/domhandler not in flight; fetching
+643 silly resolveWithNewModule domutils@1.5.1 checking installable status
+644 silly cache add args [ 'domutils@1.5', null ]
+645 verbose cache add spec domutils@1.5
+646 silly cache add parsed spec Result {
+646 silly cache add   raw: 'domutils@1.5',
+646 silly cache add   scope: null,
+646 silly cache add   name: 'domutils',
+646 silly cache add   rawSpec: '1.5',
+646 silly cache add   spec: '>=1.5.0 <1.6.0',
+646 silly cache add   type: 'range' }
+647 silly addNamed domutils@>=1.5.0 <1.6.0
+648 verbose addNamed ">=1.5.0 <1.6.0" is a valid semver range for domutils
+649 silly addNameRange { name: 'domutils', range: '>=1.5.0 <1.6.0', hasData: false }
+650 silly mapToRegistry name domutils
+651 silly mapToRegistry using default registry
+652 silly mapToRegistry registry https://registry.npmjs.org/
+653 silly mapToRegistry uri https://registry.npmjs.org/domutils
+654 verbose addNameRange registry:https://registry.npmjs.org/domutils not in flight; fetching
+655 verbose get https://registry.npmjs.org/domhandler not expired, no request
+656 silly addNameRange number 2 { name: 'domhandler', range: '>=2.3.0 <2.4.0', hasData: true }
+657 silly addNameRange versions [ 'domhandler',
+657 silly addNameRange   [ '1.0.0',
+657 silly addNameRange     '1.0.1',
+657 silly addNameRange     '1.1.0',
+657 silly addNameRange     '1.2.0',
+657 silly addNameRange     '1.3.0',
+657 silly addNameRange     '1.3.1',
+657 silly addNameRange     '1.3.2',
+657 silly addNameRange     '2.0.0',
+657 silly addNameRange     '2.0.1',
+657 silly addNameRange     '2.0.2',
+657 silly addNameRange     '2.0.3',
+657 silly addNameRange     '2.1.0',
+657 silly addNameRange     '2.2.0',
+657 silly addNameRange     '2.2.1',
+657 silly addNameRange     '2.3.0' ] ]
+658 silly addNamed domhandler@2.3.0
+659 verbose addNamed "2.3.0" is a plain semver version for domhandler
+660 verbose get https://registry.npmjs.org/domutils not expired, no request
+661 silly addNameRange number 2 { name: 'domutils', range: '>=1.5.0 <1.6.0', hasData: true }
+662 silly addNameRange versions [ 'domutils',
+662 silly addNameRange   [ '1.0.0',
+662 silly addNameRange     '1.0.1',
+662 silly addNameRange     '1.1.0',
+662 silly addNameRange     '1.1.1',
+662 silly addNameRange     '1.1.2',
+662 silly addNameRange     '1.1.3',
+662 silly addNameRange     '1.1.4',
+662 silly addNameRange     '1.1.5',
+662 silly addNameRange     '1.1.6',
+662 silly addNameRange     '1.2.0',
+662 silly addNameRange     '1.2.1',
+662 silly addNameRange     '1.2.2',
+662 silly addNameRange     '1.3.0',
+662 silly addNameRange     '1.4.0',
+662 silly addNameRange     '1.4.1',
+662 silly addNameRange     '1.4.2',
+662 silly addNameRange     '1.4.3',
+662 silly addNameRange     '1.5.0',
+662 silly addNameRange     '1.5.1' ] ]
+663 silly addNamed domutils@1.5.1
+664 verbose addNamed "1.5.1" is a plain semver version for domutils
+665 silly resolveWithNewModule readable-stream@1.1.13 checking installable status
+666 silly cache add args [ 'readable-stream@1.1', null ]
+667 verbose cache add spec readable-stream@1.1
+668 silly cache add parsed spec Result {
+668 silly cache add   raw: 'readable-stream@1.1',
+668 silly cache add   scope: null,
+668 silly cache add   name: 'readable-stream',
+668 silly cache add   rawSpec: '1.1',
+668 silly cache add   spec: '>=1.1.0 <1.2.0',
+668 silly cache add   type: 'range' }
+669 silly addNamed readable-stream@>=1.1.0 <1.2.0
+670 verbose addNamed ">=1.1.0 <1.2.0" is a valid semver range for readable-stream
+671 silly addNameRange { name: 'readable-stream',
+671 silly addNameRange   range: '>=1.1.0 <1.2.0',
+671 silly addNameRange   hasData: false }
+672 silly mapToRegistry name readable-stream
+673 silly mapToRegistry using default registry
+674 silly mapToRegistry registry https://registry.npmjs.org/
+675 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+676 verbose addNameRange registry:https://registry.npmjs.org/readable-stream not in flight; fetching
+677 silly cache afterAdd domhandler@2.3.0
+678 verbose afterAdd /Users/iTurbo/.npm/domhandler/2.3.0/package/package.json not in flight; writing
+679 silly cache afterAdd domutils@1.5.1
+680 verbose afterAdd /Users/iTurbo/.npm/domutils/1.5.1/package/package.json not in flight; writing
+681 verbose get https://registry.npmjs.org/readable-stream not expired, no request
+682 silly addNameRange number 2 { name: 'readable-stream',
+682 silly addNameRange   range: '>=1.1.0 <1.2.0',
+682 silly addNameRange   hasData: true }
+683 silly addNameRange versions [ 'readable-stream',
+683 silly addNameRange   [ '0.0.1',
+683 silly addNameRange     '0.0.2',
+683 silly addNameRange     '0.0.3',
+683 silly addNameRange     '0.0.4',
+683 silly addNameRange     '0.1.0',
+683 silly addNameRange     '0.2.0',
+683 silly addNameRange     '0.3.0',
+683 silly addNameRange     '0.3.1',
+683 silly addNameRange     '1.0.0',
+683 silly addNameRange     '1.0.1',
+683 silly addNameRange     '1.0.2',
+683 silly addNameRange     '1.0.15',
+683 silly addNameRange     '1.0.17',
+683 silly addNameRange     '1.1.7',
+683 silly addNameRange     '1.1.8',
+683 silly addNameRange     '1.1.9',
+683 silly addNameRange     '1.0.24',
+683 silly addNameRange     '1.0.25',
+683 silly addNameRange     '1.1.10',
+683 silly addNameRange     '1.0.25-1',
+683 silly addNameRange     '1.1.11',
+683 silly addNameRange     '1.0.26',
+683 silly addNameRange     '1.0.26-1',
+683 silly addNameRange     '1.1.11-1',
+683 silly addNameRange     '1.0.26-2',
+683 silly addNameRange     '1.1.12',
+683 silly addNameRange     '1.0.26-3',
+683 silly addNameRange     '1.0.26-4',
+683 silly addNameRange     '1.1.12-1',
+683 silly addNameRange     '1.0.27-1',
+683 silly addNameRange     '1.1.13-1',
+683 silly addNameRange     '1.0.31',
+683 silly addNameRange     '1.1.13',
+683 silly addNameRange     '1.0.32',
+683 silly addNameRange     '1.0.32-1',
+683 silly addNameRange     '1.0.33-1',
+683 silly addNameRange     '1.0.33-2',
+683 silly addNameRange     '1.0.33',
+683 silly addNameRange     '2.0.0',
+683 silly addNameRange     '2.0.1',
+683 silly addNameRange     '2.0.2',
+683 silly addNameRange     '2.0.3',
+683 silly addNameRange     '2.0.4',
+683 silly addNameRange     '2.0.5' ] ]
+684 silly addNamed readable-stream@1.1.13
+685 verbose addNamed "1.1.13" is a plain semver version for readable-stream
+686 silly cache afterAdd readable-stream@1.1.13
+687 verbose afterAdd /Users/iTurbo/.npm/readable-stream/1.1.13/package/package.json not in flight; writing
+688 verbose afterAdd /Users/iTurbo/.npm/domutils/1.5.1/package/package.json written
+689 verbose afterAdd /Users/iTurbo/.npm/domhandler/2.3.0/package/package.json written
+690 verbose afterAdd /Users/iTurbo/.npm/readable-stream/1.1.13/package/package.json written
+691 http 200 https://registry.npmjs.org/entities
+692 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+692 verbose headers   etag: '"EO4WDP8UFKVQ97DJPW5Z0PCEC"',
+692 verbose headers   'content-type': 'application/json',
+692 verbose headers   'cache-control': 'max-age=300',
+692 verbose headers   'content-length': '13070',
+692 verbose headers   'accept-ranges': 'bytes',
+692 verbose headers   date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+692 verbose headers   via: '1.1 varnish',
+692 verbose headers   age: '76',
+692 verbose headers   connection: 'keep-alive',
+692 verbose headers   'x-served-by': 'cache-ams4132-AMS',
+692 verbose headers   'x-cache': 'HIT',
+692 verbose headers   'x-cache-hits': '1',
+692 verbose headers   'x-timer': 'S1454090848.809884,VS0,VE0',
+692 verbose headers   vary: 'Accept' }
+693 silly get cb [ 200,
+693 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+693 silly get     etag: '"EO4WDP8UFKVQ97DJPW5Z0PCEC"',
+693 silly get     'content-type': 'application/json',
+693 silly get     'cache-control': 'max-age=300',
+693 silly get     'content-length': '13070',
+693 silly get     'accept-ranges': 'bytes',
+693 silly get     date: 'Fri, 29 Jan 2016 18:07:28 GMT',
+693 silly get     via: '1.1 varnish',
+693 silly get     age: '76',
+693 silly get     connection: 'keep-alive',
+693 silly get     'x-served-by': 'cache-ams4132-AMS',
+693 silly get     'x-cache': 'HIT',
+693 silly get     'x-cache-hits': '1',
+693 silly get     'x-timer': 'S1454090848.809884,VS0,VE0',
+693 silly get     vary: 'Accept' } ]
+694 verbose get saving entities to /Users/iTurbo/.npm/registry.npmjs.org/entities/.cache.json
+695 silly resolveWithNewModule entities@1.0.0 checking installable status
+696 silly cache add args [ 'entities@1.0', null ]
+697 verbose cache add spec entities@1.0
+698 silly cache add parsed spec Result {
+698 silly cache add   raw: 'entities@1.0',
+698 silly cache add   scope: null,
+698 silly cache add   name: 'entities',
+698 silly cache add   rawSpec: '1.0',
+698 silly cache add   spec: '>=1.0.0 <1.1.0',
+698 silly cache add   type: 'range' }
+699 silly addNamed entities@>=1.0.0 <1.1.0
+700 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for entities
+701 silly addNameRange { name: 'entities', range: '>=1.0.0 <1.1.0', hasData: false }
+702 silly mapToRegistry name entities
+703 silly mapToRegistry using default registry
+704 silly mapToRegistry registry https://registry.npmjs.org/
+705 silly mapToRegistry uri https://registry.npmjs.org/entities
+706 verbose addNameRange registry:https://registry.npmjs.org/entities not in flight; fetching
+707 verbose get https://registry.npmjs.org/entities not expired, no request
+708 silly addNameRange number 2 { name: 'entities', range: '>=1.0.0 <1.1.0', hasData: true }
+709 silly addNameRange versions [ 'entities',
+709 silly addNameRange   [ '0.1.0',
+709 silly addNameRange     '0.1.1',
+709 silly addNameRange     '0.2.0',
+709 silly addNameRange     '0.2.1',
+709 silly addNameRange     '0.2.2',
+709 silly addNameRange     '0.3.0',
+709 silly addNameRange     '0.4.0',
+709 silly addNameRange     '0.4.1',
+709 silly addNameRange     '0.5.0',
+709 silly addNameRange     '1.0.0',
+709 silly addNameRange     '1.1.0',
+709 silly addNameRange     '1.1.1' ] ]
+710 silly addNamed entities@1.0.0
+711 verbose addNamed "1.0.0" is a plain semver version for entities
+712 silly cache afterAdd entities@1.0.0
+713 verbose afterAdd /Users/iTurbo/.npm/entities/1.0.0/package/package.json not in flight; writing
+714 verbose afterAdd /Users/iTurbo/.npm/entities/1.0.0/package/package.json written
+715 silly fetchNamedPackageData dom-serializer
+716 silly mapToRegistry name dom-serializer
+717 silly mapToRegistry using default registry
+718 silly mapToRegistry registry https://registry.npmjs.org/
+719 silly mapToRegistry uri https://registry.npmjs.org/dom-serializer
+720 verbose request uri https://registry.npmjs.org/dom-serializer
+721 verbose request no auth needed
+722 info attempt registry request try #1 at 7:07:28 PM
+723 verbose etag "7KWYMW6FM9W2UI46QMZNA9AM9"
+724 http request GET https://registry.npmjs.org/dom-serializer
+725 http 304 https://registry.npmjs.org/dom-serializer
+726 verbose headers { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+726 verbose headers   via: '1.1 varnish',
+726 verbose headers   'cache-control': 'max-age=300',
+726 verbose headers   etag: '"7KWYMW6FM9W2UI46QMZNA9AM9"',
+726 verbose headers   age: '199',
+726 verbose headers   connection: 'keep-alive',
+726 verbose headers   'x-served-by': 'cache-ams4122-AMS',
+726 verbose headers   'x-cache': 'HIT',
+726 verbose headers   'x-cache-hits': '3',
+726 verbose headers   'x-timer': 'S1454090849.233299,VS0,VE0',
+726 verbose headers   vary: 'Accept' }
+727 silly get cb [ 304,
+727 silly get   { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+727 silly get     via: '1.1 varnish',
+727 silly get     'cache-control': 'max-age=300',
+727 silly get     etag: '"7KWYMW6FM9W2UI46QMZNA9AM9"',
+727 silly get     age: '199',
+727 silly get     connection: 'keep-alive',
+727 silly get     'x-served-by': 'cache-ams4122-AMS',
+727 silly get     'x-cache': 'HIT',
+727 silly get     'x-cache-hits': '3',
+727 silly get     'x-timer': 'S1454090849.233299,VS0,VE0',
+727 silly get     vary: 'Accept' } ]
+728 verbose etag https://registry.npmjs.org/dom-serializer from cache
+729 verbose get saving dom-serializer to /Users/iTurbo/.npm/registry.npmjs.org/dom-serializer/.cache.json
+730 silly resolveWithNewModule dom-serializer@0.1.0 checking installable status
+731 silly cache add args [ 'dom-serializer@0', null ]
+732 verbose cache add spec dom-serializer@0
+733 silly cache add parsed spec Result {
+733 silly cache add   raw: 'dom-serializer@0',
+733 silly cache add   scope: null,
+733 silly cache add   name: 'dom-serializer',
+733 silly cache add   rawSpec: '0',
+733 silly cache add   spec: '>=0.0.0 <1.0.0',
+733 silly cache add   type: 'range' }
+734 silly addNamed dom-serializer@>=0.0.0 <1.0.0
+735 verbose addNamed ">=0.0.0 <1.0.0" is a valid semver range for dom-serializer
+736 silly addNameRange { name: 'dom-serializer',
+736 silly addNameRange   range: '>=0.0.0 <1.0.0',
+736 silly addNameRange   hasData: false }
+737 silly mapToRegistry name dom-serializer
+738 silly mapToRegistry using default registry
+739 silly mapToRegistry registry https://registry.npmjs.org/
+740 silly mapToRegistry uri https://registry.npmjs.org/dom-serializer
+741 verbose addNameRange registry:https://registry.npmjs.org/dom-serializer not in flight; fetching
+742 verbose get https://registry.npmjs.org/dom-serializer not expired, no request
+743 silly addNameRange number 2 { name: 'dom-serializer',
+743 silly addNameRange   range: '>=0.0.0 <1.0.0',
+743 silly addNameRange   hasData: true }
+744 silly addNameRange versions [ 'dom-serializer', [ '0.0.0', '0.0.1', '0.1.0' ] ]
+745 silly addNamed dom-serializer@0.1.0
+746 verbose addNamed "0.1.0" is a plain semver version for dom-serializer
+747 silly cache afterAdd dom-serializer@0.1.0
+748 verbose afterAdd /Users/iTurbo/.npm/dom-serializer/0.1.0/package/package.json not in flight; writing
+749 verbose afterAdd /Users/iTurbo/.npm/dom-serializer/0.1.0/package/package.json written
+750 silly fetchNamedPackageData domelementtype
+751 silly mapToRegistry name domelementtype
+752 silly mapToRegistry using default registry
+753 silly mapToRegistry registry https://registry.npmjs.org/
+754 silly mapToRegistry uri https://registry.npmjs.org/domelementtype
+755 silly resolveWithNewModule domelementtype@1.1.3 checking installable status
+756 silly cache add args [ 'domelementtype@~1.1.1', null ]
+757 verbose cache add spec domelementtype@~1.1.1
+758 silly fetchNamedPackageData entities
+759 silly mapToRegistry name entities
+760 silly mapToRegistry using default registry
+761 silly mapToRegistry registry https://registry.npmjs.org/
+762 silly mapToRegistry uri https://registry.npmjs.org/entities
+763 silly resolveWithNewModule entities@1.1.1 checking installable status
+764 silly cache add args [ 'entities@~1.1.1', null ]
+765 verbose cache add spec entities@~1.1.1
+766 silly cache add parsed spec Result {
+766 silly cache add   raw: 'domelementtype@~1.1.1',
+766 silly cache add   scope: null,
+766 silly cache add   name: 'domelementtype',
+766 silly cache add   rawSpec: '~1.1.1',
+766 silly cache add   spec: '>=1.1.1 <1.2.0',
+766 silly cache add   type: 'range' }
+767 silly addNamed domelementtype@>=1.1.1 <1.2.0
+768 verbose addNamed ">=1.1.1 <1.2.0" is a valid semver range for domelementtype
+769 silly addNameRange { name: 'domelementtype',
+769 silly addNameRange   range: '>=1.1.1 <1.2.0',
+769 silly addNameRange   hasData: false }
+770 silly mapToRegistry name domelementtype
+771 silly mapToRegistry using default registry
+772 silly mapToRegistry registry https://registry.npmjs.org/
+773 silly mapToRegistry uri https://registry.npmjs.org/domelementtype
+774 verbose addNameRange registry:https://registry.npmjs.org/domelementtype not in flight; fetching
+775 silly cache add parsed spec Result {
+775 silly cache add   raw: 'entities@~1.1.1',
+775 silly cache add   scope: null,
+775 silly cache add   name: 'entities',
+775 silly cache add   rawSpec: '~1.1.1',
+775 silly cache add   spec: '>=1.1.1 <1.2.0',
+775 silly cache add   type: 'range' }
+776 silly addNamed entities@>=1.1.1 <1.2.0
+777 verbose addNamed ">=1.1.1 <1.2.0" is a valid semver range for entities
+778 silly addNameRange { name: 'entities', range: '>=1.1.1 <1.2.0', hasData: false }
+779 silly mapToRegistry name entities
+780 silly mapToRegistry using default registry
+781 silly mapToRegistry registry https://registry.npmjs.org/
+782 silly mapToRegistry uri https://registry.npmjs.org/entities
+783 verbose addNameRange registry:https://registry.npmjs.org/entities not in flight; fetching
+784 verbose get https://registry.npmjs.org/domelementtype not expired, no request
+785 silly addNameRange number 2 { name: 'domelementtype',
+785 silly addNameRange   range: '>=1.1.1 <1.2.0',
+785 silly addNameRange   hasData: true }
+786 silly addNameRange versions [ 'domelementtype',
+786 silly addNameRange   [ '1.0.0',
+786 silly addNameRange     '1.0.1',
+786 silly addNameRange     '1.1.0',
+786 silly addNameRange     '1.1.1',
+786 silly addNameRange     '1.1.2',
+786 silly addNameRange     '1.1.3',
+786 silly addNameRange     '1.2.0',
+786 silly addNameRange     '1.3.0' ] ]
+787 silly addNamed domelementtype@1.1.3
+788 verbose addNamed "1.1.3" is a plain semver version for domelementtype
+789 verbose get https://registry.npmjs.org/entities not expired, no request
+790 silly addNameRange number 2 { name: 'entities', range: '>=1.1.1 <1.2.0', hasData: true }
+791 silly addNameRange versions [ 'entities',
+791 silly addNameRange   [ '0.1.0',
+791 silly addNameRange     '0.1.1',
+791 silly addNameRange     '0.2.0',
+791 silly addNameRange     '0.2.1',
+791 silly addNameRange     '0.2.2',
+791 silly addNameRange     '0.3.0',
+791 silly addNameRange     '0.4.0',
+791 silly addNameRange     '0.4.1',
+791 silly addNameRange     '0.5.0',
+791 silly addNameRange     '1.0.0',
+791 silly addNameRange     '1.1.0',
+791 silly addNameRange     '1.1.1' ] ]
+792 silly addNamed entities@1.1.1
+793 verbose addNamed "1.1.1" is a plain semver version for entities
+794 silly cache afterAdd domelementtype@1.1.3
+795 verbose afterAdd /Users/iTurbo/.npm/domelementtype/1.1.3/package/package.json not in flight; writing
+796 silly cache afterAdd entities@1.1.1
+797 verbose afterAdd /Users/iTurbo/.npm/entities/1.1.1/package/package.json not in flight; writing
+798 verbose afterAdd /Users/iTurbo/.npm/entities/1.1.1/package/package.json written
+799 verbose afterAdd /Users/iTurbo/.npm/domelementtype/1.1.3/package/package.json written
+800 silly fetchNamedPackageData core-util-is
+801 silly mapToRegistry name core-util-is
+802 silly mapToRegistry using default registry
+803 silly mapToRegistry registry https://registry.npmjs.org/
+804 silly mapToRegistry uri https://registry.npmjs.org/core-util-is
+805 silly fetchNamedPackageData isarray
+806 silly mapToRegistry name isarray
+807 silly mapToRegistry using default registry
+808 silly mapToRegistry registry https://registry.npmjs.org/
+809 silly mapToRegistry uri https://registry.npmjs.org/isarray
+810 silly fetchNamedPackageData string_decoder
+811 silly mapToRegistry name string_decoder
+812 silly mapToRegistry using default registry
+813 silly mapToRegistry registry https://registry.npmjs.org/
+814 silly mapToRegistry uri https://registry.npmjs.org/string_decoder
+815 verbose request uri https://registry.npmjs.org/core-util-is
+816 verbose request no auth needed
+817 info attempt registry request try #1 at 7:07:29 PM
+818 verbose etag "75RK9UUWAHLYO40UZKLLOJ8YF"
+819 http request GET https://registry.npmjs.org/core-util-is
+820 verbose request uri https://registry.npmjs.org/isarray
+821 verbose request no auth needed
+822 info attempt registry request try #1 at 7:07:29 PM
+823 verbose etag "9BAUPW5RTV3W0838KA6Y08NTG"
+824 http request GET https://registry.npmjs.org/isarray
+825 verbose request uri https://registry.npmjs.org/string_decoder
+826 verbose request no auth needed
+827 info attempt registry request try #1 at 7:07:29 PM
+828 verbose etag "3SLQP4XEWUIBONOV855WOPR0B"
+829 http request GET https://registry.npmjs.org/string_decoder
+830 http 304 https://registry.npmjs.org/core-util-is
+831 verbose headers { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+831 verbose headers   via: '1.1 varnish',
+831 verbose headers   'cache-control': 'max-age=300',
+831 verbose headers   etag: '"75RK9UUWAHLYO40UZKLLOJ8YF"',
+831 verbose headers   age: '1',
+831 verbose headers   connection: 'keep-alive',
+831 verbose headers   'x-served-by': 'cache-ams4138-AMS',
+831 verbose headers   'x-cache': 'HIT',
+831 verbose headers   'x-cache-hits': '1',
+831 verbose headers   'x-timer': 'S1454090849.423684,VS0,VE0',
+831 verbose headers   vary: 'Accept' }
+832 silly get cb [ 304,
+832 silly get   { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+832 silly get     via: '1.1 varnish',
+832 silly get     'cache-control': 'max-age=300',
+832 silly get     etag: '"75RK9UUWAHLYO40UZKLLOJ8YF"',
+832 silly get     age: '1',
+832 silly get     connection: 'keep-alive',
+832 silly get     'x-served-by': 'cache-ams4138-AMS',
+832 silly get     'x-cache': 'HIT',
+832 silly get     'x-cache-hits': '1',
+832 silly get     'x-timer': 'S1454090849.423684,VS0,VE0',
+832 silly get     vary: 'Accept' } ]
+833 verbose etag https://registry.npmjs.org/core-util-is from cache
+834 verbose get saving core-util-is to /Users/iTurbo/.npm/registry.npmjs.org/core-util-is/.cache.json
+835 silly resolveWithNewModule core-util-is@1.0.2 checking installable status
+836 silly cache add args [ 'core-util-is@~1.0.0', null ]
+837 verbose cache add spec core-util-is@~1.0.0
+838 silly cache add parsed spec Result {
+838 silly cache add   raw: 'core-util-is@~1.0.0',
+838 silly cache add   scope: null,
+838 silly cache add   name: 'core-util-is',
+838 silly cache add   rawSpec: '~1.0.0',
+838 silly cache add   spec: '>=1.0.0 <1.1.0',
+838 silly cache add   type: 'range' }
+839 silly addNamed core-util-is@>=1.0.0 <1.1.0
+840 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for core-util-is
+841 silly addNameRange { name: 'core-util-is', range: '>=1.0.0 <1.1.0', hasData: false }
+842 silly mapToRegistry name core-util-is
+843 silly mapToRegistry using default registry
+844 silly mapToRegistry registry https://registry.npmjs.org/
+845 silly mapToRegistry uri https://registry.npmjs.org/core-util-is
+846 verbose addNameRange registry:https://registry.npmjs.org/core-util-is not in flight; fetching
+847 verbose get https://registry.npmjs.org/core-util-is not expired, no request
+848 silly addNameRange number 2 { name: 'core-util-is', range: '>=1.0.0 <1.1.0', hasData: true }
+849 silly addNameRange versions [ 'core-util-is', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+850 silly addNamed core-util-is@1.0.2
+851 verbose addNamed "1.0.2" is a plain semver version for core-util-is
+852 silly cache afterAdd core-util-is@1.0.2
+853 verbose afterAdd /Users/iTurbo/.npm/core-util-is/1.0.2/package/package.json not in flight; writing
+854 verbose afterAdd /Users/iTurbo/.npm/core-util-is/1.0.2/package/package.json written
+855 http 304 https://registry.npmjs.org/isarray
+856 verbose headers { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+856 verbose headers   via: '1.1 varnish',
+856 verbose headers   'cache-control': 'max-age=300',
+856 verbose headers   etag: '"9BAUPW5RTV3W0838KA6Y08NTG"',
+856 verbose headers   age: '72',
+856 verbose headers   connection: 'keep-alive',
+856 verbose headers   'x-served-by': 'cache-ams4144-AMS',
+856 verbose headers   'x-cache': 'HIT',
+856 verbose headers   'x-cache-hits': '2',
+856 verbose headers   'x-timer': 'S1454090849.440810,VS0,VE0',
+856 verbose headers   vary: 'Accept' }
+857 silly get cb [ 304,
+857 silly get   { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+857 silly get     via: '1.1 varnish',
+857 silly get     'cache-control': 'max-age=300',
+857 silly get     etag: '"9BAUPW5RTV3W0838KA6Y08NTG"',
+857 silly get     age: '72',
+857 silly get     connection: 'keep-alive',
+857 silly get     'x-served-by': 'cache-ams4144-AMS',
+857 silly get     'x-cache': 'HIT',
+857 silly get     'x-cache-hits': '2',
+857 silly get     'x-timer': 'S1454090849.440810,VS0,VE0',
+857 silly get     vary: 'Accept' } ]
+858 verbose etag https://registry.npmjs.org/isarray from cache
+859 verbose get saving isarray to /Users/iTurbo/.npm/registry.npmjs.org/isarray/.cache.json
+860 silly resolveWithNewModule isarray@0.0.1 checking installable status
+861 silly cache add args [ 'isarray@0.0.1', null ]
+862 verbose cache add spec isarray@0.0.1
+863 silly cache add parsed spec Result {
+863 silly cache add   raw: 'isarray@0.0.1',
+863 silly cache add   scope: null,
+863 silly cache add   name: 'isarray',
+863 silly cache add   rawSpec: '0.0.1',
+863 silly cache add   spec: '0.0.1',
+863 silly cache add   type: 'version' }
+864 silly addNamed isarray@0.0.1
+865 verbose addNamed "0.0.1" is a plain semver version for isarray
+866 silly mapToRegistry name isarray
+867 silly mapToRegistry using default registry
+868 silly mapToRegistry registry https://registry.npmjs.org/
+869 silly mapToRegistry uri https://registry.npmjs.org/isarray
+870 verbose addNameVersion registry:https://registry.npmjs.org/isarray not in flight; fetching
+871 verbose get https://registry.npmjs.org/isarray not expired, no request
+872 silly cache afterAdd isarray@0.0.1
+873 verbose afterAdd /Users/iTurbo/.npm/isarray/0.0.1/package/package.json not in flight; writing
+874 verbose afterAdd /Users/iTurbo/.npm/isarray/0.0.1/package/package.json written
+875 http 304 https://registry.npmjs.org/string_decoder
+876 verbose headers { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+876 verbose headers   via: '1.1 varnish',
+876 verbose headers   'cache-control': 'max-age=300',
+876 verbose headers   etag: '"3SLQP4XEWUIBONOV855WOPR0B"',
+876 verbose headers   age: '109',
+876 verbose headers   connection: 'keep-alive',
+876 verbose headers   'x-served-by': 'cache-ams4135-AMS',
+876 verbose headers   'x-cache': 'HIT',
+876 verbose headers   'x-cache-hits': '7',
+876 verbose headers   'x-timer': 'S1454090849.637654,VS0,VE0',
+876 verbose headers   vary: 'Accept' }
+877 silly get cb [ 304,
+877 silly get   { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+877 silly get     via: '1.1 varnish',
+877 silly get     'cache-control': 'max-age=300',
+877 silly get     etag: '"3SLQP4XEWUIBONOV855WOPR0B"',
+877 silly get     age: '109',
+877 silly get     connection: 'keep-alive',
+877 silly get     'x-served-by': 'cache-ams4135-AMS',
+877 silly get     'x-cache': 'HIT',
+877 silly get     'x-cache-hits': '7',
+877 silly get     'x-timer': 'S1454090849.637654,VS0,VE0',
+877 silly get     vary: 'Accept' } ]
+878 verbose etag https://registry.npmjs.org/string_decoder from cache
+879 verbose get saving string_decoder to /Users/iTurbo/.npm/registry.npmjs.org/string_decoder/.cache.json
+880 silly resolveWithNewModule string_decoder@0.10.31 checking installable status
+881 silly cache add args [ 'string_decoder@~0.10.x', null ]
+882 verbose cache add spec string_decoder@~0.10.x
+883 silly cache add parsed spec Result {
+883 silly cache add   raw: 'string_decoder@~0.10.x',
+883 silly cache add   scope: null,
+883 silly cache add   name: 'string_decoder',
+883 silly cache add   rawSpec: '~0.10.x',
+883 silly cache add   spec: '>=0.10.0 <0.11.0',
+883 silly cache add   type: 'range' }
+884 silly addNamed string_decoder@>=0.10.0 <0.11.0
+885 verbose addNamed ">=0.10.0 <0.11.0" is a valid semver range for string_decoder
+886 silly addNameRange { name: 'string_decoder',
+886 silly addNameRange   range: '>=0.10.0 <0.11.0',
+886 silly addNameRange   hasData: false }
+887 silly mapToRegistry name string_decoder
+888 silly mapToRegistry using default registry
+889 silly mapToRegistry registry https://registry.npmjs.org/
+890 silly mapToRegistry uri https://registry.npmjs.org/string_decoder
+891 verbose addNameRange registry:https://registry.npmjs.org/string_decoder not in flight; fetching
+892 verbose get https://registry.npmjs.org/string_decoder not expired, no request
+893 silly addNameRange number 2 { name: 'string_decoder',
+893 silly addNameRange   range: '>=0.10.0 <0.11.0',
+893 silly addNameRange   hasData: true }
+894 silly addNameRange versions [ 'string_decoder',
+894 silly addNameRange   [ '0.0.0',
+894 silly addNameRange     '0.0.1',
+894 silly addNameRange     '0.10.24',
+894 silly addNameRange     '0.11.10',
+894 silly addNameRange     '0.10.25',
+894 silly addNameRange     '0.11.10-1',
+894 silly addNameRange     '0.10.25-1',
+894 silly addNameRange     '0.10.31' ] ]
+895 silly addNamed string_decoder@0.10.31
+896 verbose addNamed "0.10.31" is a plain semver version for string_decoder
+897 silly cache afterAdd string_decoder@0.10.31
+898 verbose afterAdd /Users/iTurbo/.npm/string_decoder/0.10.31/package/package.json not in flight; writing
+899 verbose afterAdd /Users/iTurbo/.npm/string_decoder/0.10.31/package/package.json written
+900 silly fetchNamedPackageData brace-expansion
+901 silly mapToRegistry name brace-expansion
+902 silly mapToRegistry using default registry
+903 silly mapToRegistry registry https://registry.npmjs.org/
+904 silly mapToRegistry uri https://registry.npmjs.org/brace-expansion
+905 verbose request uri https://registry.npmjs.org/brace-expansion
+906 verbose request no auth needed
+907 info attempt registry request try #1 at 7:07:29 PM
+908 verbose etag "BC3J7JX1LEFWG3645L5NSTZJP"
+909 http request GET https://registry.npmjs.org/brace-expansion
+910 http 304 https://registry.npmjs.org/brace-expansion
+911 verbose headers { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+911 verbose headers   via: '1.1 varnish',
+911 verbose headers   'cache-control': 'max-age=300',
+911 verbose headers   etag: '"BC3J7JX1LEFWG3645L5NSTZJP"',
+911 verbose headers   age: '13',
+911 verbose headers   connection: 'keep-alive',
+911 verbose headers   'x-served-by': 'cache-ams4121-AMS',
+911 verbose headers   'x-cache': 'HIT',
+911 verbose headers   'x-cache-hits': '2',
+911 verbose headers   'x-timer': 'S1454090849.814702,VS0,VE0',
+911 verbose headers   vary: 'Accept' }
+912 silly get cb [ 304,
+912 silly get   { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+912 silly get     via: '1.1 varnish',
+912 silly get     'cache-control': 'max-age=300',
+912 silly get     etag: '"BC3J7JX1LEFWG3645L5NSTZJP"',
+912 silly get     age: '13',
+912 silly get     connection: 'keep-alive',
+912 silly get     'x-served-by': 'cache-ams4121-AMS',
+912 silly get     'x-cache': 'HIT',
+912 silly get     'x-cache-hits': '2',
+912 silly get     'x-timer': 'S1454090849.814702,VS0,VE0',
+912 silly get     vary: 'Accept' } ]
+913 verbose etag https://registry.npmjs.org/brace-expansion from cache
+914 verbose get saving brace-expansion to /Users/iTurbo/.npm/registry.npmjs.org/brace-expansion/.cache.json
+915 silly resolveWithNewModule brace-expansion@1.1.2 checking installable status
+916 silly cache add args [ 'brace-expansion@^1.0.0', null ]
+917 verbose cache add spec brace-expansion@^1.0.0
+918 silly cache add parsed spec Result {
+918 silly cache add   raw: 'brace-expansion@^1.0.0',
+918 silly cache add   scope: null,
+918 silly cache add   name: 'brace-expansion',
+918 silly cache add   rawSpec: '^1.0.0',
+918 silly cache add   spec: '>=1.0.0 <2.0.0',
+918 silly cache add   type: 'range' }
+919 silly addNamed brace-expansion@>=1.0.0 <2.0.0
+920 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for brace-expansion
+921 silly addNameRange { name: 'brace-expansion',
+921 silly addNameRange   range: '>=1.0.0 <2.0.0',
+921 silly addNameRange   hasData: false }
+922 silly mapToRegistry name brace-expansion
+923 silly mapToRegistry using default registry
+924 silly mapToRegistry registry https://registry.npmjs.org/
+925 silly mapToRegistry uri https://registry.npmjs.org/brace-expansion
+926 verbose addNameRange registry:https://registry.npmjs.org/brace-expansion not in flight; fetching
+927 verbose get https://registry.npmjs.org/brace-expansion not expired, no request
+928 silly addNameRange number 2 { name: 'brace-expansion',
+928 silly addNameRange   range: '>=1.0.0 <2.0.0',
+928 silly addNameRange   hasData: true }
+929 silly addNameRange versions [ 'brace-expansion',
+929 silly addNameRange   [ '0.0.0', '1.0.0', '1.0.1', '1.1.0', '1.1.1', '1.1.2' ] ]
+930 silly addNamed brace-expansion@1.1.2
+931 verbose addNamed "1.1.2" is a plain semver version for brace-expansion
+932 silly cache afterAdd brace-expansion@1.1.2
+933 verbose afterAdd /Users/iTurbo/.npm/brace-expansion/1.1.2/package/package.json not in flight; writing
+934 verbose afterAdd /Users/iTurbo/.npm/brace-expansion/1.1.2/package/package.json written
+935 silly fetchNamedPackageData balanced-match
+936 silly mapToRegistry name balanced-match
+937 silly mapToRegistry using default registry
+938 silly mapToRegistry registry https://registry.npmjs.org/
+939 silly mapToRegistry uri https://registry.npmjs.org/balanced-match
+940 silly fetchNamedPackageData concat-map
+941 silly mapToRegistry name concat-map
+942 silly mapToRegistry using default registry
+943 silly mapToRegistry registry https://registry.npmjs.org/
+944 silly mapToRegistry uri https://registry.npmjs.org/concat-map
+945 verbose request uri https://registry.npmjs.org/balanced-match
+946 verbose request no auth needed
+947 info attempt registry request try #1 at 7:07:29 PM
+948 verbose etag "EWNXFSBBRIGH7I8HCEJKUKS4M"
+949 http request GET https://registry.npmjs.org/balanced-match
+950 verbose request uri https://registry.npmjs.org/concat-map
+951 verbose request no auth needed
+952 info attempt registry request try #1 at 7:07:29 PM
+953 verbose etag "66LI2B4AH1989LYDFSL4P944A"
+954 http request GET https://registry.npmjs.org/concat-map
+955 http 304 https://registry.npmjs.org/balanced-match
+956 verbose headers { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+956 verbose headers   via: '1.1 varnish',
+956 verbose headers   'cache-control': 'max-age=60',
+956 verbose headers   etag: '"EWNXFSBBRIGH7I8HCEJKUKS4M"',
+956 verbose headers   age: '31',
+956 verbose headers   connection: 'keep-alive',
+956 verbose headers   'x-served-by': 'cache-ams4142-AMS',
+956 verbose headers   'x-cache': 'HIT',
+956 verbose headers   'x-cache-hits': '3',
+956 verbose headers   'x-timer': 'S1454090849.950434,VS0,VE0',
+956 verbose headers   vary: 'Accept' }
+957 silly get cb [ 304,
+957 silly get   { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+957 silly get     via: '1.1 varnish',
+957 silly get     'cache-control': 'max-age=60',
+957 silly get     etag: '"EWNXFSBBRIGH7I8HCEJKUKS4M"',
+957 silly get     age: '31',
+957 silly get     connection: 'keep-alive',
+957 silly get     'x-served-by': 'cache-ams4142-AMS',
+957 silly get     'x-cache': 'HIT',
+957 silly get     'x-cache-hits': '3',
+957 silly get     'x-timer': 'S1454090849.950434,VS0,VE0',
+957 silly get     vary: 'Accept' } ]
+958 verbose etag https://registry.npmjs.org/balanced-match from cache
+959 verbose get saving balanced-match to /Users/iTurbo/.npm/registry.npmjs.org/balanced-match/.cache.json
+960 silly resolveWithNewModule balanced-match@0.3.0 checking installable status
+961 silly cache add args [ 'balanced-match@^0.3.0', null ]
+962 verbose cache add spec balanced-match@^0.3.0
+963 silly cache add parsed spec Result {
+963 silly cache add   raw: 'balanced-match@^0.3.0',
+963 silly cache add   scope: null,
+963 silly cache add   name: 'balanced-match',
+963 silly cache add   rawSpec: '^0.3.0',
+963 silly cache add   spec: '>=0.3.0 <0.4.0',
+963 silly cache add   type: 'range' }
+964 silly addNamed balanced-match@>=0.3.0 <0.4.0
+965 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for balanced-match
+966 silly addNameRange { name: 'balanced-match',
+966 silly addNameRange   range: '>=0.3.0 <0.4.0',
+966 silly addNameRange   hasData: false }
+967 silly mapToRegistry name balanced-match
+968 silly mapToRegistry using default registry
+969 silly mapToRegistry registry https://registry.npmjs.org/
+970 silly mapToRegistry uri https://registry.npmjs.org/balanced-match
+971 verbose addNameRange registry:https://registry.npmjs.org/balanced-match not in flight; fetching
+972 verbose get https://registry.npmjs.org/balanced-match not expired, no request
+973 silly addNameRange number 2 { name: 'balanced-match',
+973 silly addNameRange   range: '>=0.3.0 <0.4.0',
+973 silly addNameRange   hasData: true }
+974 silly addNameRange versions [ 'balanced-match',
+974 silly addNameRange   [ '0.0.0', '0.0.1', '0.1.0', '0.2.0', '0.2.1', '0.3.0' ] ]
+975 silly addNamed balanced-match@0.3.0
+976 verbose addNamed "0.3.0" is a plain semver version for balanced-match
+977 silly cache afterAdd balanced-match@0.3.0
+978 verbose afterAdd /Users/iTurbo/.npm/balanced-match/0.3.0/package/package.json not in flight; writing
+979 verbose afterAdd /Users/iTurbo/.npm/balanced-match/0.3.0/package/package.json written
+980 http 304 https://registry.npmjs.org/concat-map
+981 verbose headers { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+981 verbose headers   via: '1.1 varnish',
+981 verbose headers   'cache-control': 'max-age=300',
+981 verbose headers   etag: '"66LI2B4AH1989LYDFSL4P944A"',
+981 verbose headers   age: '85',
+981 verbose headers   connection: 'keep-alive',
+981 verbose headers   'x-served-by': 'cache-ams4142-AMS',
+981 verbose headers   'x-cache': 'HIT',
+981 verbose headers   'x-cache-hits': '3',
+981 verbose headers   'x-timer': 'S1454090849.975005,VS0,VE0',
+981 verbose headers   vary: 'Accept' }
+982 silly get cb [ 304,
+982 silly get   { date: 'Fri, 29 Jan 2016 18:07:29 GMT',
+982 silly get     via: '1.1 varnish',
+982 silly get     'cache-control': 'max-age=300',
+982 silly get     etag: '"66LI2B4AH1989LYDFSL4P944A"',
+982 silly get     age: '85',
+982 silly get     connection: 'keep-alive',
+982 silly get     'x-served-by': 'cache-ams4142-AMS',
+982 silly get     'x-cache': 'HIT',
+982 silly get     'x-cache-hits': '3',
+982 silly get     'x-timer': 'S1454090849.975005,VS0,VE0',
+982 silly get     vary: 'Accept' } ]
+983 verbose etag https://registry.npmjs.org/concat-map from cache
+984 verbose get saving concat-map to /Users/iTurbo/.npm/registry.npmjs.org/concat-map/.cache.json
+985 silly resolveWithNewModule concat-map@0.0.1 checking installable status
+986 silly cache add args [ 'concat-map@0.0.1', null ]
+987 verbose cache add spec concat-map@0.0.1
+988 silly cache add parsed spec Result {
+988 silly cache add   raw: 'concat-map@0.0.1',
+988 silly cache add   scope: null,
+988 silly cache add   name: 'concat-map',
+988 silly cache add   rawSpec: '0.0.1',
+988 silly cache add   spec: '0.0.1',
+988 silly cache add   type: 'version' }
+989 silly addNamed concat-map@0.0.1
+990 verbose addNamed "0.0.1" is a plain semver version for concat-map
+991 silly mapToRegistry name concat-map
+992 silly mapToRegistry using default registry
+993 silly mapToRegistry registry https://registry.npmjs.org/
+994 silly mapToRegistry uri https://registry.npmjs.org/concat-map
+995 verbose addNameVersion registry:https://registry.npmjs.org/concat-map not in flight; fetching
+996 verbose get https://registry.npmjs.org/concat-map not expired, no request
+997 silly cache afterAdd concat-map@0.0.1
+998 verbose afterAdd /Users/iTurbo/.npm/concat-map/0.0.1/package/package.json not in flight; writing
+999 verbose afterAdd /Users/iTurbo/.npm/concat-map/0.0.1/package/package.json written
+1000 silly loadAllDepsIntoIdealTree Finishing
+1001 silly idealTree:prePrune lib
+1001 silly idealTree:prePrune └─┬ jshint@2.9.1
+1001 silly idealTree:prePrune   ├── balanced-match@0.3.0
+1001 silly idealTree:prePrune   ├── brace-expansion@1.1.2
+1001 silly idealTree:prePrune   ├── cli@0.6.6
+1001 silly idealTree:prePrune   ├── concat-map@0.0.1
+1001 silly idealTree:prePrune   ├── console-browserify@1.1.0
+1001 silly idealTree:prePrune   ├── core-util-is@1.0.2
+1001 silly idealTree:prePrune   ├── date-now@0.1.4
+1001 silly idealTree:prePrune   ├─┬ dom-serializer@0.1.0
+1001 silly idealTree:prePrune   │ ├── domelementtype@1.1.3
+1001 silly idealTree:prePrune   │ └── entities@1.1.1
+1001 silly idealTree:prePrune   ├── domelementtype@1.3.0
+1001 silly idealTree:prePrune   ├── domhandler@2.3.0
+1001 silly idealTree:prePrune   ├── domutils@1.5.1
+1001 silly idealTree:prePrune   ├── entities@1.0.0
+1001 silly idealTree:prePrune   ├── exit@0.1.2
+1001 silly idealTree:prePrune   ├─┬ glob@3.2.11
+1001 silly idealTree:prePrune   │ └── minimatch@0.3.0
+1001 silly idealTree:prePrune   ├── htmlparser2@3.8.3
+1001 silly idealTree:prePrune   ├── inherits@2.0.1
+1001 silly idealTree:prePrune   ├── isarray@0.0.1
+1001 silly idealTree:prePrune   ├── lodash@3.7.0
+1001 silly idealTree:prePrune   ├── lru-cache@2.7.3
+1001 silly idealTree:prePrune   ├── minimatch@2.0.10
+1001 silly idealTree:prePrune   ├── readable-stream@1.1.13
+1001 silly idealTree:prePrune   ├── shelljs@0.3.0
+1001 silly idealTree:prePrune   ├── sigmund@1.0.1
+1001 silly idealTree:prePrune   ├── string_decoder@0.10.31
+1001 silly idealTree:prePrune   └── strip-json-comments@1.0.4
+1002 silly loadIdealTree Finishing
+1003 silly currentTree lib
+1004 silly idealTree lib
+1004 silly idealTree └─┬ jshint@2.9.1
+1004 silly idealTree   ├── balanced-match@0.3.0
+1004 silly idealTree   ├── brace-expansion@1.1.2
+1004 silly idealTree   ├── cli@0.6.6
+1004 silly idealTree   ├── concat-map@0.0.1
+1004 silly idealTree   ├── console-browserify@1.1.0
+1004 silly idealTree   ├── core-util-is@1.0.2
+1004 silly idealTree   ├── date-now@0.1.4
+1004 silly idealTree   ├─┬ dom-serializer@0.1.0
+1004 silly idealTree   │ ├── domelementtype@1.1.3
+1004 silly idealTree   │ └── entities@1.1.1
+1004 silly idealTree   ├── domelementtype@1.3.0
+1004 silly idealTree   ├── domhandler@2.3.0
+1004 silly idealTree   ├── domutils@1.5.1
+1004 silly idealTree   ├── entities@1.0.0
+1004 silly idealTree   ├── exit@0.1.2
+1004 silly idealTree   ├─┬ glob@3.2.11
+1004 silly idealTree   │ └── minimatch@0.3.0
+1004 silly idealTree   ├── htmlparser2@3.8.3
+1004 silly idealTree   ├── inherits@2.0.1
+1004 silly idealTree   ├── isarray@0.0.1
+1004 silly idealTree   ├── lodash@3.7.0
+1004 silly idealTree   ├── lru-cache@2.7.3
+1004 silly idealTree   ├── minimatch@2.0.10
+1004 silly idealTree   ├── readable-stream@1.1.13
+1004 silly idealTree   ├── shelljs@0.3.0
+1004 silly idealTree   ├── sigmund@1.0.1
+1004 silly idealTree   ├── string_decoder@0.10.31
+1004 silly idealTree   └── strip-json-comments@1.0.4
+1005 silly generateActionsToTake Starting
+1006 silly install generateActionsToTake
+1007 warn checkPermissions Missing write access to /usr/local/lib/node_modules
+1008 silly rollbackFailedOptional Starting
+1009 silly rollbackFailedOptional Finishing
+1010 silly runTopLevelLifecycles Starting
+1011 silly runTopLevelLifecycles Finishing
+1012 silly install printInstalled
+1013 verbose stack Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+1013 verbose stack     at Error (native)
+1014 verbose cwd /Users/iTurbo/Google Drive/1. Developer/2. Ironhack/Mini_Exercises
+1015 error Darwin 15.3.0
+1016 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "jshint"
+1017 error node v5.3.0
+1018 error npm  v3.3.12
+1019 error path /usr/local/lib/node_modules
+1020 error code EACCES
+1021 error errno -13
+1022 error syscall access
+1023 error Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+1023 error     at Error (native)
+1023 error  { [Error: EACCES: permission denied, access '/usr/local/lib/node_modules']
+1023 error   errno: -13,
+1023 error   code: 'EACCES',
+1023 error   syscall: 'access',
+1023 error   path: '/usr/local/lib/node_modules' }
+1024 error Please try running this command again as root/Administrator.
+1025 verbose exit [ -13, true ]
