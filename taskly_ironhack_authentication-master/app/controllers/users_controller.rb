@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   # GET /users
   def index
     @users = User.all
+    UserMailer.welcome(current_user).deliver_now
   end
 
   # GET /users/1
@@ -47,7 +48,6 @@ class UsersController < ApplicationController
   end
 
   # DELETE /users/1
-  
 
   private
   
